@@ -23,6 +23,6 @@ Rovo quoted that limitation in the observed response. One correct response does 
 
 ## Remaining acceptance work
 
-The second account's earlier UI restrictions were observed, but direct live backend approval denial and hidden-issue denial remain pending. Concurrency is covered by automated tests, not a live race experiment. Intermittent initial panel loading remains under investigation. A duplicate-form lifecycle defect was reproduced locally and a correction is being validated. No independent participant study was performed.
+A subsequent direct backend approval attempt from the distinct reviewer account on AGA-5 was denied, despite explicit confirmation and the exact revision/policy hash. All six history IDs/actions/timestamps were unchanged. This used the actual Forge bridge on production 2.1.0, not a mocked request or merely a disabled button. Both identities are controlled by one person. Hidden-issue denial remains pending. Concurrency is covered by automated tests, not a live race experiment. Intermittent initial panel loading remains under investigation. A duplicate-form lifecycle defect was reproduced and corrected in development 2.10.0. Two live Reload actions retained one editable runner form; revision-change resets are covered by automated tests. No independent participant study was performed.
 
 The existing videos predate this benchmark. A new coherent main video and production update are pending; the public installer must not be assumed to include development 2.9.0.
