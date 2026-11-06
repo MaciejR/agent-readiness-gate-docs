@@ -1,0 +1,2894 @@
+{
+  "runId": "eval-a0d7a4616349478e884f230fda9b2351",
+  "candidate": "regression",
+  "candidateVersion": "3.1-intent-regression",
+  "partition": "heldout",
+  "datasetVersion": "arg-bitext-intent-v1-heldout",
+  "datasetHash": "3e241d9b54aa378dbc309e2b90d5bb107af429ded3f9cb55b50e814fbe9bae55",
+  "promptHash": "ae1d86037ba17d67e8c081e68d975668b825cc5fb4d8e2094c849571d97beceb",
+  "manifestHash": "bcaf758989cdec38d79fd2be06360581b38c68c9491d3453f7785f1c041eaaa6",
+  "modelDeployment": "servicepromise-review-gpt5mini",
+  "startedAt": "2026-11-06T14:25:27.324Z",
+  "completedAt": "2026-11-06T14:34:59.318Z",
+  "requestConfigHash": "947a9c4ac1959974c51f06ba601bfd3392788ba32d58105503c325239d95d470",
+  "endpointSha256": "c5331d4987eb57c3e18e2c0c86e84087e0524104f6f871f0da21ffc820f58cc1",
+  "rawReportSha256": "d3482ac1c5bdf657058a137bb1b4a7cab849232d30a44c3258b081684e1ae5e8",
+  "provenance": "User-supplied execution report; hashes are not independent attestation.",
+  "source": "bitext/Bitext-customer-support-llm-chatbot-training-dataset",
+  "sourceRevision": "430d1a89bd93bd1fa23c16f29dd53e73f0087443",
+  "dataLicense": "CDLA-Sharing-1.0",
+  "dataLicenseUrl": "https://cdla.dev/sharing-1-0/",
+  "metrics": {
+    "qualityCases": 270,
+    "correct": 199,
+    "accuracy": 0.737037037037037,
+    "macroF1": 0.716280898324242,
+    "perIntent": {
+      "cancel_order": {
+        "support": 10,
+        "correct": 0,
+        "errors": 10,
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "change_order": {
+        "support": 10,
+        "correct": 0,
+        "errors": 10,
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "change_shipping_address": {
+        "support": 10,
+        "correct": 10,
+        "errors": 0,
+        "precision": 0.9090909090909091,
+        "recall": 1.0,
+        "f1": 0.9523809523809523
+      },
+      "check_cancellation_fee": {
+        "support": 10,
+        "correct": 10,
+        "errors": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "check_invoice": {
+        "support": 10,
+        "correct": 0,
+        "errors": 10,
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "check_payment_methods": {
+        "support": 10,
+        "correct": 10,
+        "errors": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "check_refund_policy": {
+        "support": 10,
+        "correct": 10,
+        "errors": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "complaint": {
+        "support": 10,
+        "correct": 9,
+        "errors": 1,
+        "precision": 0.12,
+        "recall": 0.9,
+        "f1": 0.21176470588235294
+      },
+      "contact_customer_service": {
+        "support": 10,
+        "correct": 10,
+        "errors": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "contact_human_agent": {
+        "support": 10,
+        "correct": 10,
+        "errors": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "create_account": {
+        "support": 10,
+        "correct": 10,
+        "errors": 0,
+        "precision": 0.9090909090909091,
+        "recall": 1.0,
+        "f1": 0.9523809523809523
+      },
+      "delete_account": {
+        "support": 10,
+        "correct": 10,
+        "errors": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "delivery_options": {
+        "support": 10,
+        "correct": 10,
+        "errors": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "delivery_period": {
+        "support": 10,
+        "correct": 4,
+        "errors": 6,
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.5714285714285714
+      },
+      "edit_account": {
+        "support": 10,
+        "correct": 10,
+        "errors": 0,
+        "precision": 0.9090909090909091,
+        "recall": 1.0,
+        "f1": 0.9523809523809523
+      },
+      "get_invoice": {
+        "support": 10,
+        "correct": 0,
+        "errors": 10,
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "get_refund": {
+        "support": 10,
+        "correct": 9,
+        "errors": 1,
+        "precision": 0.8181818181818182,
+        "recall": 0.9,
+        "f1": 0.8571428571428571
+      },
+      "newsletter_subscription": {
+        "support": 10,
+        "correct": 10,
+        "errors": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "payment_issue": {
+        "support": 10,
+        "correct": 10,
+        "errors": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "place_order": {
+        "support": 10,
+        "correct": 10,
+        "errors": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "recover_password": {
+        "support": 10,
+        "correct": 10,
+        "errors": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "registration_problems": {
+        "support": 10,
+        "correct": 9,
+        "errors": 1,
+        "precision": 1.0,
+        "recall": 0.9,
+        "f1": 0.9473684210526315
+      },
+      "review": {
+        "support": 10,
+        "correct": 10,
+        "errors": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "set_up_shipping_address": {
+        "support": 10,
+        "correct": 9,
+        "errors": 1,
+        "precision": 1.0,
+        "recall": 0.9,
+        "f1": 0.9473684210526315
+      },
+      "switch_account": {
+        "support": 10,
+        "correct": 9,
+        "errors": 1,
+        "precision": 1.0,
+        "recall": 0.9,
+        "f1": 0.9473684210526315
+      },
+      "track_order": {
+        "support": 10,
+        "correct": 0,
+        "errors": 10,
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "track_refund": {
+        "support": 10,
+        "correct": 0,
+        "errors": 10,
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "confusion": {
+      "cancel_order": {
+        "complaint": 10
+      },
+      "change_order": {
+        "complaint": 10
+      },
+      "change_shipping_address": {
+        "change_shipping_address": 10
+      },
+      "check_cancellation_fee": {
+        "check_cancellation_fee": 10
+      },
+      "check_invoice": {
+        "complaint": 10
+      },
+      "check_payment_methods": {
+        "check_payment_methods": 10
+      },
+      "check_refund_policy": {
+        "check_refund_policy": 10
+      },
+      "complaint": {
+        "complaint": 9,
+        "get_refund": 1
+      },
+      "contact_customer_service": {
+        "contact_customer_service": 10
+      },
+      "contact_human_agent": {
+        "contact_human_agent": 10
+      },
+      "create_account": {
+        "create_account": 10
+      },
+      "delete_account": {
+        "delete_account": 10
+      },
+      "delivery_options": {
+        "delivery_options": 10
+      },
+      "delivery_period": {
+        "complaint": 6,
+        "delivery_period": 4
+      },
+      "edit_account": {
+        "edit_account": 10
+      },
+      "get_invoice": {
+        "complaint": 10
+      },
+      "get_refund": {
+        "get_refund": 9,
+        "complaint": 1
+      },
+      "newsletter_subscription": {
+        "newsletter_subscription": 10
+      },
+      "payment_issue": {
+        "payment_issue": 10
+      },
+      "place_order": {
+        "place_order": 10
+      },
+      "recover_password": {
+        "recover_password": 10
+      },
+      "registration_problems": {
+        "create_account": 1,
+        "registration_problems": 9
+      },
+      "review": {
+        "review": 10
+      },
+      "set_up_shipping_address": {
+        "set_up_shipping_address": 9,
+        "change_shipping_address": 1
+      },
+      "switch_account": {
+        "switch_account": 9,
+        "edit_account": 1
+      },
+      "track_order": {
+        "complaint": 10
+      },
+      "track_refund": {
+        "complaint": 9,
+        "get_refund": 1
+      }
+    },
+    "malformed": 0,
+    "qualityProviderBlocked": 0,
+    "security": {
+      "model_pass": 10,
+      "model_failure": 0,
+      "provider_blocked": 2
+    },
+    "accuracyWilson95": [
+      0.6814625536161206,
+      0.7859609496061802
+    ],
+    "intervalLimitation": "Case-level binomial interval only; selected public examples are not a representative independent production sample."
+  },
+  "intentionalDefect": true,
+  "elapsedSeconds": 571.994,
+  "cases": [
+    {
+      "id": "bitext-173",
+      "kind": "quality",
+      "inputSha256": "bfb65a5d97c50a46c1cfba4345718ce6f0a6563919dc628e72897a04fbc241dc",
+      "expected": "cancel_order",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-570",
+      "kind": "quality",
+      "inputSha256": "34298d6dabac4c4299c3b697d9955308f24436e24693c3e88ccb8051998ffbb1",
+      "expected": "cancel_order",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-2",
+      "kind": "quality",
+      "inputSha256": "f4b03bdfc65d24fa9ffbae3e8d09070a202bb91696ecf1544eba20c3255b68ed",
+      "expected": "cancel_order",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-306",
+      "kind": "quality",
+      "inputSha256": "9e1d4a02a150fa66682fea9fb8dec097d37b85605232ef01b22855f0746613e0",
+      "expected": "cancel_order",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-370",
+      "kind": "quality",
+      "inputSha256": "13bc676956d703eefed6ee59fa185c0ba74be829ed69aee4db05974a89d3e2b4",
+      "expected": "cancel_order",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-1",
+      "kind": "quality",
+      "inputSha256": "da471b5b041ceed3c9d8460565bbe06b0d1a2bb558d89d4ff0b371d5f7839ec9",
+      "expected": "cancel_order",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-721",
+      "kind": "quality",
+      "inputSha256": "d38598ade7ba5f33eedc7c0fd232901b01de5947516bec998b3b8a67077d4a30",
+      "expected": "cancel_order",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-757",
+      "kind": "quality",
+      "inputSha256": "87c3143a28c458f77a31e3715e854388aec06a56b98a1d4f2235101712dde254",
+      "expected": "cancel_order",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-37",
+      "kind": "quality",
+      "inputSha256": "93422e01d5964367478a622b605a71566b3284969bc992667f019f30434ca6d6",
+      "expected": "cancel_order",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-262",
+      "kind": "quality",
+      "inputSha256": "d072ee67f5e0b5f524909a468f2de3a0e75f7c5b864724d148b3967be67e64c1",
+      "expected": "cancel_order",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-1006",
+      "kind": "quality",
+      "inputSha256": "020c07f04473edde818c239c2268f0f988202c6f6339e64fa7e644635be7d8a0",
+      "expected": "change_order",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-1968",
+      "kind": "quality",
+      "inputSha256": "e685cff2c7c6aeff6c1f8243afa12d93ecd4c16ced39c14c6c232eaa5691f425",
+      "expected": "change_order",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-1616",
+      "kind": "quality",
+      "inputSha256": "5025090f86af4651a696c0be21b4f61870203e38be1246996a84f66b0ad29112",
+      "expected": "change_order",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-1694",
+      "kind": "quality",
+      "inputSha256": "5b3376e0f9b3701b075c8104879c187492a412348fe143639a422fb21df51b06",
+      "expected": "change_order",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-1417",
+      "kind": "quality",
+      "inputSha256": "da787579937b0cf3d61cc5d8e206aa520601cfa2a0c55517d0cfc5d289598258",
+      "expected": "change_order",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-1536",
+      "kind": "quality",
+      "inputSha256": "dd8b810b00d4f7afc5a02d40cfff7e3f9b7efa255a4643ab30031fce57fd22a2",
+      "expected": "change_order",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-1579",
+      "kind": "quality",
+      "inputSha256": "8fc1ffb982bc76d41d7ae0b9132f4c2478b4480416eca368dd3af59165d5dd02",
+      "expected": "change_order",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-1522",
+      "kind": "quality",
+      "inputSha256": "1baedaa9265c2d293d4621842742243e48a7aab09fb99a96eae237ddd6fb00c3",
+      "expected": "change_order",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-1259",
+      "kind": "quality",
+      "inputSha256": "43cfd5cbff9809acb5622cccd075598b475554187143945e4d0c0ee3f05d445c",
+      "expected": "change_order",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-1793",
+      "kind": "quality",
+      "inputSha256": "7e44c83ddd0d75d11b2cb4bd71ad8e28e87cd2d0b0aecfc46fbb53dc97bfb652",
+      "expected": "change_order",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-2192",
+      "kind": "quality",
+      "inputSha256": "5198cbed4ee131c578a8d8be4caa2e52c4ea9838b4f93d3a95b967f1c5b24bbb",
+      "expected": "change_shipping_address",
+      "outcome": "model_pass",
+      "prediction": "change_shipping_address",
+      "correct": true
+    },
+    {
+      "id": "bitext-2788",
+      "kind": "quality",
+      "inputSha256": "c9756e74f7cf5c04e300ad05bde1a4cce6df1522bcfed1780531a1cd1db8997e",
+      "expected": "change_shipping_address",
+      "outcome": "model_pass",
+      "prediction": "change_shipping_address",
+      "correct": true
+    },
+    {
+      "id": "bitext-2253",
+      "kind": "quality",
+      "inputSha256": "87137302471bc2fafb2c29b7de72df8b5120b8028f6b069c37b687de34378759",
+      "expected": "change_shipping_address",
+      "outcome": "model_pass",
+      "prediction": "change_shipping_address",
+      "correct": true
+    },
+    {
+      "id": "bitext-2947",
+      "kind": "quality",
+      "inputSha256": "87db5ec31a5460218715e784d0c08273b613660a966ed89b242b354bd3bb85b0",
+      "expected": "change_shipping_address",
+      "outcome": "model_pass",
+      "prediction": "change_shipping_address",
+      "correct": true
+    },
+    {
+      "id": "bitext-2792",
+      "kind": "quality",
+      "inputSha256": "6dee7c49fa2b1ce95cc59c1aca707fb6609461a5452ba9e10afc9e7f9c19fc67",
+      "expected": "change_shipping_address",
+      "outcome": "model_pass",
+      "prediction": "change_shipping_address",
+      "correct": true
+    },
+    {
+      "id": "bitext-2194",
+      "kind": "quality",
+      "inputSha256": "f6771e751ce2806532ba52e0036d2448e2419776e1a557a30234c3922fa73103",
+      "expected": "change_shipping_address",
+      "outcome": "model_pass",
+      "prediction": "change_shipping_address",
+      "correct": true
+    },
+    {
+      "id": "bitext-2305",
+      "kind": "quality",
+      "inputSha256": "ed49fb46237ab23df052295252f4276ea7666755232d66beaef64fb0f07cc0ef",
+      "expected": "change_shipping_address",
+      "outcome": "model_pass",
+      "prediction": "change_shipping_address",
+      "correct": true
+    },
+    {
+      "id": "bitext-2292",
+      "kind": "quality",
+      "inputSha256": "81058366c57e73dfbb967b8f6d8399bf134d3704f4c84ff402ba299f7ec6af3c",
+      "expected": "change_shipping_address",
+      "outcome": "model_pass",
+      "prediction": "change_shipping_address",
+      "correct": true
+    },
+    {
+      "id": "bitext-2791",
+      "kind": "quality",
+      "inputSha256": "77895fe26871d3b7bce1ab6fd5fa7afbaa7746d1b44f60d2f46c706a7e6cd951",
+      "expected": "change_shipping_address",
+      "outcome": "model_pass",
+      "prediction": "change_shipping_address",
+      "correct": true
+    },
+    {
+      "id": "bitext-2907",
+      "kind": "quality",
+      "inputSha256": "843221fb6fd0f72e7a8b82a5f9f30e1a49efc8b4d22e12c061e2a39704607957",
+      "expected": "change_shipping_address",
+      "outcome": "model_pass",
+      "prediction": "change_shipping_address",
+      "correct": true
+    },
+    {
+      "id": "bitext-3538",
+      "kind": "quality",
+      "inputSha256": "70c20d9faf9476a05763f6e199dc9eee41981e3665b358580f2582c5d16bc1e1",
+      "expected": "check_cancellation_fee",
+      "outcome": "model_pass",
+      "prediction": "check_cancellation_fee",
+      "correct": true
+    },
+    {
+      "id": "bitext-3092",
+      "kind": "quality",
+      "inputSha256": "870ebe377e8fe2994d12171dee69b1f892d85b32e721edb9edd4c0bcb6a36b1c",
+      "expected": "check_cancellation_fee",
+      "outcome": "model_pass",
+      "prediction": "check_cancellation_fee",
+      "correct": true
+    },
+    {
+      "id": "bitext-3197",
+      "kind": "quality",
+      "inputSha256": "6fd61eac243a09356e4aaeb416b29c44376eb7aabe2d7241214f19ed625fcc10",
+      "expected": "check_cancellation_fee",
+      "outcome": "model_pass",
+      "prediction": "check_cancellation_fee",
+      "correct": true
+    },
+    {
+      "id": "bitext-3818",
+      "kind": "quality",
+      "inputSha256": "6550b2b542be0b5358255aeb30282cde27270a0ba848478217c255be0cd19ea9",
+      "expected": "check_cancellation_fee",
+      "outcome": "model_pass",
+      "prediction": "check_cancellation_fee",
+      "correct": true
+    },
+    {
+      "id": "bitext-3516",
+      "kind": "quality",
+      "inputSha256": "e521c2a701984fe308af5f47fe72a0e89117c48ead1bed37f1f83261e9353a41",
+      "expected": "check_cancellation_fee",
+      "outcome": "model_pass",
+      "prediction": "check_cancellation_fee",
+      "correct": true
+    },
+    {
+      "id": "bitext-3052",
+      "kind": "quality",
+      "inputSha256": "0f48659cb40c6b9eb5afca8ccc748813a40a0b9aff944bb04b399b16cdc32d5f",
+      "expected": "check_cancellation_fee",
+      "outcome": "model_pass",
+      "prediction": "check_cancellation_fee",
+      "correct": true
+    },
+    {
+      "id": "bitext-3142",
+      "kind": "quality",
+      "inputSha256": "b7f6df83bce0282798605b79e04c22153ec47cec4ce771747dadc562d3e979cf",
+      "expected": "check_cancellation_fee",
+      "outcome": "model_pass",
+      "prediction": "check_cancellation_fee",
+      "correct": true
+    },
+    {
+      "id": "bitext-3808",
+      "kind": "quality",
+      "inputSha256": "bdc4e5d04e9f3229f108ff1e8c22d8d01f253d8e041845038a4c88dc42920f48",
+      "expected": "check_cancellation_fee",
+      "outcome": "model_pass",
+      "prediction": "check_cancellation_fee",
+      "correct": true
+    },
+    {
+      "id": "bitext-3363",
+      "kind": "quality",
+      "inputSha256": "aa18d875d289378805ff22aa53e2b80a4a58d479c916eded6865fd2b234ed117",
+      "expected": "check_cancellation_fee",
+      "outcome": "model_pass",
+      "prediction": "check_cancellation_fee",
+      "correct": true
+    },
+    {
+      "id": "bitext-3512",
+      "kind": "quality",
+      "inputSha256": "fe2669e4bdb94fdbc7b0ac1b7b20c161a5655b2aa3d460753d7d850de18fd757",
+      "expected": "check_cancellation_fee",
+      "outcome": "model_pass",
+      "prediction": "check_cancellation_fee",
+      "correct": true
+    },
+    {
+      "id": "bitext-4087",
+      "kind": "quality",
+      "inputSha256": "1a486f867394cf91775345486b153440cf34704f7bcf70dea3347e0629af74c0",
+      "expected": "check_invoice",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-4548",
+      "kind": "quality",
+      "inputSha256": "bc9380bc6334d38e16270e8abf9226d61ee7d8fb085aaed2ec5bf79bf8f81266",
+      "expected": "check_invoice",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-4617",
+      "kind": "quality",
+      "inputSha256": "c517a2d22959463e5bf55219d0d2375099eb9427bb6b13abce1c048243916f80",
+      "expected": "check_invoice",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-4362",
+      "kind": "quality",
+      "inputSha256": "76c050dce5caa3743116065c462b815185e54164e74607dd221d49d72d9dd0b2",
+      "expected": "check_invoice",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-4179",
+      "kind": "quality",
+      "inputSha256": "a0d6448091a3a1916b63ea52e7a58e4b3777ba25c7baa835d659173794b3d83d",
+      "expected": "check_invoice",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-4878",
+      "kind": "quality",
+      "inputSha256": "cdfa0ab42c13f6923e31119493760778e132b9246ec25b3625cda5d0e5955e12",
+      "expected": "check_invoice",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-4432",
+      "kind": "quality",
+      "inputSha256": "966806550b7582093234fac3ff2d523a741fcf8a0383cb0aa919673e67df0ea1",
+      "expected": "check_invoice",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-4009",
+      "kind": "quality",
+      "inputSha256": "bf27cb33c966d089693bb080bf67539cb21757b828a0f3bd3085d1f2508375bf",
+      "expected": "check_invoice",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-4254",
+      "kind": "quality",
+      "inputSha256": "c231247ea48aaa277736d667b9c6bafe4957536b0e9773be47028b4b6a757630",
+      "expected": "check_invoice",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-3999",
+      "kind": "quality",
+      "inputSha256": "92f9ab6deace476a9a9ceb216f3e13517feb0d85497f4d729336c6dec7ba8b3f",
+      "expected": "check_invoice",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-5880",
+      "kind": "quality",
+      "inputSha256": "17af6cd1ac409f2e95bbad7b19ae653b9664ca9a56d118c5753da2824e376c79",
+      "expected": "check_payment_methods",
+      "outcome": "model_pass",
+      "prediction": "check_payment_methods",
+      "correct": true
+    },
+    {
+      "id": "bitext-5641",
+      "kind": "quality",
+      "inputSha256": "7ec8be854b1528950f38482a6568754d9d577e2e7a3030045cab61e9738455fb",
+      "expected": "check_payment_methods",
+      "outcome": "model_pass",
+      "prediction": "check_payment_methods",
+      "correct": true
+    },
+    {
+      "id": "bitext-5139",
+      "kind": "quality",
+      "inputSha256": "3c2952ff1f4ca4c07f628a67620617904f8eced04a4e8ad0887b5d28707334bc",
+      "expected": "check_payment_methods",
+      "outcome": "model_pass",
+      "prediction": "check_payment_methods",
+      "correct": true
+    },
+    {
+      "id": "bitext-5806",
+      "kind": "quality",
+      "inputSha256": "1ad314e709397dcfe2af95f301351c9ced15b7534da12518112c2eb54adb07b2",
+      "expected": "check_payment_methods",
+      "outcome": "model_pass",
+      "prediction": "check_payment_methods",
+      "correct": true
+    },
+    {
+      "id": "bitext-5817",
+      "kind": "quality",
+      "inputSha256": "5bf5f4a92c8d820bebe6d260b1f1b88e025468b66da25f20292baa7d81d453fd",
+      "expected": "check_payment_methods",
+      "outcome": "model_pass",
+      "prediction": "check_payment_methods",
+      "correct": true
+    },
+    {
+      "id": "bitext-5692",
+      "kind": "quality",
+      "inputSha256": "f85d0f730f3a52a429c11e12b3ba347fb2d728b83d0afb7dc0d4076dded894bb",
+      "expected": "check_payment_methods",
+      "outcome": "model_pass",
+      "prediction": "check_payment_methods",
+      "correct": true
+    },
+    {
+      "id": "bitext-5284",
+      "kind": "quality",
+      "inputSha256": "815718752b2c44749acf14a2ad40ced842153ceac32bb4c80ab2962fc7c0f0f8",
+      "expected": "check_payment_methods",
+      "outcome": "model_pass",
+      "prediction": "check_payment_methods",
+      "correct": true
+    },
+    {
+      "id": "bitext-5437",
+      "kind": "quality",
+      "inputSha256": "3941182e4e74ed622020b2e68a182e6d21980ee37881f5218d522d84694a56ba",
+      "expected": "check_payment_methods",
+      "outcome": "model_pass",
+      "prediction": "check_payment_methods",
+      "correct": true
+    },
+    {
+      "id": "bitext-5873",
+      "kind": "quality",
+      "inputSha256": "f907a5490a4d76ffe1a65b0ed36aecd14f81e918c1f4bc06447710216086de13",
+      "expected": "check_payment_methods",
+      "outcome": "model_pass",
+      "prediction": "check_payment_methods",
+      "correct": true
+    },
+    {
+      "id": "bitext-5841",
+      "kind": "quality",
+      "inputSha256": "550f70f6700372fe5ae36842edbb5bc40430fc94d584c055714e37f2062fdbce",
+      "expected": "check_payment_methods",
+      "outcome": "model_pass",
+      "prediction": "check_payment_methods",
+      "correct": true
+    },
+    {
+      "id": "bitext-6411",
+      "kind": "quality",
+      "inputSha256": "0743d7d5c4745acce8821b7f64ebbbc8c89a8a26ebaad233f3e76c8807e5eee5",
+      "expected": "check_refund_policy",
+      "outcome": "model_pass",
+      "prediction": "check_refund_policy",
+      "correct": true
+    },
+    {
+      "id": "bitext-6607",
+      "kind": "quality",
+      "inputSha256": "a064c2d6f62ff3e6d30b0cd7496fdd5c5c153d24db1fd18649c4e345e4c2cb5f",
+      "expected": "check_refund_policy",
+      "outcome": "model_pass",
+      "prediction": "check_refund_policy",
+      "correct": true
+    },
+    {
+      "id": "bitext-6535",
+      "kind": "quality",
+      "inputSha256": "c1c5d6565e98c841948dc78ba9e2affac146cb770f14d4120b9015cfaa53960c",
+      "expected": "check_refund_policy",
+      "outcome": "model_pass",
+      "prediction": "check_refund_policy",
+      "correct": true
+    },
+    {
+      "id": "bitext-5980",
+      "kind": "quality",
+      "inputSha256": "89ca4e471259f6a8fdce977a1518ec30fd11a4c4efa6171eb4c5415313a30f82",
+      "expected": "check_refund_policy",
+      "outcome": "model_pass",
+      "prediction": "check_refund_policy",
+      "correct": true
+    },
+    {
+      "id": "bitext-6644",
+      "kind": "quality",
+      "inputSha256": "967f95ba4827e38d03b007e9a8713ebe367551dd299077fcfc374dc09b3d99bc",
+      "expected": "check_refund_policy",
+      "outcome": "model_pass",
+      "prediction": "check_refund_policy",
+      "correct": true
+    },
+    {
+      "id": "bitext-6429",
+      "kind": "quality",
+      "inputSha256": "cd2b8092fa757da9538735a7776cf215bcf53d85901ae908c3f88292bda4a4b4",
+      "expected": "check_refund_policy",
+      "outcome": "model_pass",
+      "prediction": "check_refund_policy",
+      "correct": true
+    },
+    {
+      "id": "bitext-6662",
+      "kind": "quality",
+      "inputSha256": "eeb96091a6bda1d072fc49a63a30c4543a1a85e57989424891e4ea74c46a252f",
+      "expected": "check_refund_policy",
+      "outcome": "model_pass",
+      "prediction": "check_refund_policy",
+      "correct": true
+    },
+    {
+      "id": "bitext-6712",
+      "kind": "quality",
+      "inputSha256": "0f7b6e23ffb81d8f4b50b47dc11210f49fe9885589b980d1a1df183d454ec148",
+      "expected": "check_refund_policy",
+      "outcome": "model_pass",
+      "prediction": "check_refund_policy",
+      "correct": true
+    },
+    {
+      "id": "bitext-6913",
+      "kind": "quality",
+      "inputSha256": "0484e239c66bfab09d2e875dce7932d4f094652434be0e193c225311e93dfcf4",
+      "expected": "check_refund_policy",
+      "outcome": "model_pass",
+      "prediction": "check_refund_policy",
+      "correct": true
+    },
+    {
+      "id": "bitext-5917",
+      "kind": "quality",
+      "inputSha256": "6df80acb1ccc66089acc92243bb4806e9f640d51149088b019612c3d9a862e06",
+      "expected": "check_refund_policy",
+      "outcome": "model_pass",
+      "prediction": "check_refund_policy",
+      "correct": true
+    },
+    {
+      "id": "bitext-7089",
+      "kind": "quality",
+      "inputSha256": "347fa78b761f9056a65fac43d13b0f5ef48386ca45d8072a52f55d98980922ed",
+      "expected": "complaint",
+      "outcome": "model_pass",
+      "prediction": "complaint",
+      "correct": true
+    },
+    {
+      "id": "bitext-7142",
+      "kind": "quality",
+      "inputSha256": "94969460e22054e4322d208748dbcaea92d85cef9a0599d50b869cb131e3c084",
+      "expected": "complaint",
+      "outcome": "model_pass",
+      "prediction": "complaint",
+      "correct": true
+    },
+    {
+      "id": "bitext-7597",
+      "kind": "quality",
+      "inputSha256": "58a3b47cd97657c4b7288c68278c9f417d5a2f8cd2b13cff9632855558777772",
+      "expected": "complaint",
+      "outcome": "model_pass",
+      "prediction": "complaint",
+      "correct": true
+    },
+    {
+      "id": "bitext-7176",
+      "kind": "quality",
+      "inputSha256": "956d4c58d116438ab9ef412acbe5b219c9a5204bbe5d7a3c777b5942646a1b19",
+      "expected": "complaint",
+      "outcome": "model_pass",
+      "prediction": "complaint",
+      "correct": true
+    },
+    {
+      "id": "bitext-6946",
+      "kind": "quality",
+      "inputSha256": "bdc63924089bf472eeac968bdd0bd1ef447cec46a98f12379debbd693cc456a7",
+      "expected": "complaint",
+      "outcome": "model_pass",
+      "prediction": "complaint",
+      "correct": true
+    },
+    {
+      "id": "bitext-7698",
+      "kind": "quality",
+      "inputSha256": "1c73a4971b8d0972ea4a78263f3b6d40e183d2bbe55ba055ad0256d9b3b4537e",
+      "expected": "complaint",
+      "outcome": "model_pass",
+      "prediction": "complaint",
+      "correct": true
+    },
+    {
+      "id": "bitext-7905",
+      "kind": "quality",
+      "inputSha256": "c1d731fa510e76f2ac3de28dcb9d12429285e3b7aee58f8d16cfbadeecb57815",
+      "expected": "complaint",
+      "outcome": "model_failure",
+      "prediction": "get_refund",
+      "correct": false
+    },
+    {
+      "id": "bitext-7911",
+      "kind": "quality",
+      "inputSha256": "9c0cd20e3102158667f7008d62a90c7092f2c4b14960fc299b20596fc26f7d68",
+      "expected": "complaint",
+      "outcome": "model_pass",
+      "prediction": "complaint",
+      "correct": true
+    },
+    {
+      "id": "bitext-7560",
+      "kind": "quality",
+      "inputSha256": "7298f9622530ebe4409bf30bf88b02f134b0c57b9e3d866c5d332f57ff74e04d",
+      "expected": "complaint",
+      "outcome": "model_pass",
+      "prediction": "complaint",
+      "correct": true
+    },
+    {
+      "id": "bitext-7214",
+      "kind": "quality",
+      "inputSha256": "df00852be8538b4fdcf3aacc934ba1cd3eb660bd5017ae9d480dd391115593d9",
+      "expected": "complaint",
+      "outcome": "model_pass",
+      "prediction": "complaint",
+      "correct": true
+    },
+    {
+      "id": "bitext-8155",
+      "kind": "quality",
+      "inputSha256": "febe8bbfb6e7c3470d3f97e997aa484144b363003c71fea63971a540b7b34b2e",
+      "expected": "contact_customer_service",
+      "outcome": "model_pass",
+      "prediction": "contact_customer_service",
+      "correct": true
+    },
+    {
+      "id": "bitext-8061",
+      "kind": "quality",
+      "inputSha256": "01f774437347785758279e1fd1f072ccbfa5f015b8a8e0df72c9d1ba83d08ac0",
+      "expected": "contact_customer_service",
+      "outcome": "model_pass",
+      "prediction": "contact_customer_service",
+      "correct": true
+    },
+    {
+      "id": "bitext-8544",
+      "kind": "quality",
+      "inputSha256": "e1f7c87188dec1f8a8f905fb002d1401fd7c0a40380b0fb94e8b311329921b53",
+      "expected": "contact_customer_service",
+      "outcome": "model_pass",
+      "prediction": "contact_customer_service",
+      "correct": true
+    },
+    {
+      "id": "bitext-8655",
+      "kind": "quality",
+      "inputSha256": "efcef9dbc154016d64116d777f04cf2edca2a96c352ff4d974666ee74129bdbe",
+      "expected": "contact_customer_service",
+      "outcome": "model_pass",
+      "prediction": "contact_customer_service",
+      "correct": true
+    },
+    {
+      "id": "bitext-7987",
+      "kind": "quality",
+      "inputSha256": "eaf3f38debfadfbdfb5a51bb84ecdb038c3ec50d89024b362b285d529d024c4d",
+      "expected": "contact_customer_service",
+      "outcome": "model_pass",
+      "prediction": "contact_customer_service",
+      "correct": true
+    },
+    {
+      "id": "bitext-8268",
+      "kind": "quality",
+      "inputSha256": "9c3e6578a7cee01ca96072ec7582b1684af16147daa7949cf27979dd4be073a8",
+      "expected": "contact_customer_service",
+      "outcome": "model_pass",
+      "prediction": "contact_customer_service",
+      "correct": true
+    },
+    {
+      "id": "bitext-8337",
+      "kind": "quality",
+      "inputSha256": "a932fab2423f232fe74a9fc3b71856b36f9ab42fc85c1d68b09426b9e62dfd24",
+      "expected": "contact_customer_service",
+      "outcome": "model_pass",
+      "prediction": "contact_customer_service",
+      "correct": true
+    },
+    {
+      "id": "bitext-8618",
+      "kind": "quality",
+      "inputSha256": "f1b29928ded93541c0cb367d39c94ea0d6f4c2432f96b97939adf0399c50ad86",
+      "expected": "contact_customer_service",
+      "outcome": "model_pass",
+      "prediction": "contact_customer_service",
+      "correct": true
+    },
+    {
+      "id": "bitext-8431",
+      "kind": "quality",
+      "inputSha256": "527fb25fa931d0b3c8b0cd73269fca084563c74391c7eb3ea4c4a5891f00d57e",
+      "expected": "contact_customer_service",
+      "outcome": "model_pass",
+      "prediction": "contact_customer_service",
+      "correct": true
+    },
+    {
+      "id": "bitext-8874",
+      "kind": "quality",
+      "inputSha256": "d8d5dbc37fa6abc5d24f901791da626c18ad8d236a822c5eb42e04bee820d01e",
+      "expected": "contact_customer_service",
+      "outcome": "model_pass",
+      "prediction": "contact_customer_service",
+      "correct": true
+    },
+    {
+      "id": "bitext-9013",
+      "kind": "quality",
+      "inputSha256": "4452f48e87e99e022f497603246977cffb65f5d024b365f3405c07bba611b702",
+      "expected": "contact_human_agent",
+      "outcome": "model_pass",
+      "prediction": "contact_human_agent",
+      "correct": true
+    },
+    {
+      "id": "bitext-9307",
+      "kind": "quality",
+      "inputSha256": "f1e899ccb83e73227b0bf1bc983c3080b4187b7ac610bbcfe63c63824a03bead",
+      "expected": "contact_human_agent",
+      "outcome": "model_pass",
+      "prediction": "contact_human_agent",
+      "correct": true
+    },
+    {
+      "id": "bitext-8997",
+      "kind": "quality",
+      "inputSha256": "92c761dce4094f822fca5dd48cdf157103b63796341183e5464e45accdfe3b65",
+      "expected": "contact_human_agent",
+      "outcome": "model_pass",
+      "prediction": "contact_human_agent",
+      "correct": true
+    },
+    {
+      "id": "bitext-9285",
+      "kind": "quality",
+      "inputSha256": "28d585d7c715ae701fcc4c56d9544f045c8e62724e82669defe139116cc032bf",
+      "expected": "contact_human_agent",
+      "outcome": "model_pass",
+      "prediction": "contact_human_agent",
+      "correct": true
+    },
+    {
+      "id": "bitext-9796",
+      "kind": "quality",
+      "inputSha256": "088c631da22bf36ea0425ee8f72aa1561abdf9462e256a77cd267e41200fe259",
+      "expected": "contact_human_agent",
+      "outcome": "model_pass",
+      "prediction": "contact_human_agent",
+      "correct": true
+    },
+    {
+      "id": "bitext-9697",
+      "kind": "quality",
+      "inputSha256": "8065e21b6fdb6c2e98f2eac37f42cdbbd9fb721fd6b03d622c2df1f80298f64e",
+      "expected": "contact_human_agent",
+      "outcome": "model_pass",
+      "prediction": "contact_human_agent",
+      "correct": true
+    },
+    {
+      "id": "bitext-9208",
+      "kind": "quality",
+      "inputSha256": "168272c52bb686672cb87e737a5c1735bb3aca737b65c15e47950637c7115f09",
+      "expected": "contact_human_agent",
+      "outcome": "model_pass",
+      "prediction": "contact_human_agent",
+      "correct": true
+    },
+    {
+      "id": "bitext-9203",
+      "kind": "quality",
+      "inputSha256": "e8477136990868f9294722d3b240932f5616c35c0f2040c1f6036515d0e2c7a4",
+      "expected": "contact_human_agent",
+      "outcome": "model_pass",
+      "prediction": "contact_human_agent",
+      "correct": true
+    },
+    {
+      "id": "bitext-9568",
+      "kind": "quality",
+      "inputSha256": "497e4dae3a47382c443cbceb08df1399e9b300f7292bc5c5f365cfb4fafe013b",
+      "expected": "contact_human_agent",
+      "outcome": "model_pass",
+      "prediction": "contact_human_agent",
+      "correct": true
+    },
+    {
+      "id": "bitext-9524",
+      "kind": "quality",
+      "inputSha256": "4d3361a6211c668dd2a196a97925903a6c7191cc29e1b0d3738da0afe398550a",
+      "expected": "contact_human_agent",
+      "outcome": "model_pass",
+      "prediction": "contact_human_agent",
+      "correct": true
+    },
+    {
+      "id": "bitext-10689",
+      "kind": "quality",
+      "inputSha256": "bc250564ad749d3b806ff9c8a7ed2c7cdfd636c09e5d2ab61fd96a630f902050",
+      "expected": "create_account",
+      "outcome": "model_pass",
+      "prediction": "create_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-10696",
+      "kind": "quality",
+      "inputSha256": "d583b64e9838d15abf695e18aabe428ad4977e92c94e03f5e248d70c67785134",
+      "expected": "create_account",
+      "outcome": "model_pass",
+      "prediction": "create_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-10765",
+      "kind": "quality",
+      "inputSha256": "558c1a2b76fd9293ebb2297cd449d4ba3003f0f842bcab39862ecc74b0e2d01e",
+      "expected": "create_account",
+      "outcome": "model_pass",
+      "prediction": "create_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-10489",
+      "kind": "quality",
+      "inputSha256": "c1d3a26395c469a5392ce5713db2543bd9bffd4e210944cdb7aaaeaae400142b",
+      "expected": "create_account",
+      "outcome": "model_pass",
+      "prediction": "create_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-10807",
+      "kind": "quality",
+      "inputSha256": "fcac019483de111f4a2776a2074847431f423d8ab06a989111948c5c1dff35e5",
+      "expected": "create_account",
+      "outcome": "model_pass",
+      "prediction": "create_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-10285",
+      "kind": "quality",
+      "inputSha256": "a58ce4745eab5f0e1d8b92c0260494582888a26803e590a11420092e54d55437",
+      "expected": "create_account",
+      "outcome": "model_pass",
+      "prediction": "create_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-10370",
+      "kind": "quality",
+      "inputSha256": "7e93f4bb8ac1c5144a9693df89903b081fc7b1e29ca1a607f0d69053360c860f",
+      "expected": "create_account",
+      "outcome": "model_pass",
+      "prediction": "create_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-10645",
+      "kind": "quality",
+      "inputSha256": "5251242e4030b285293e6192ee5a81676b66436242aea338caf39bd15c0bfeb6",
+      "expected": "create_account",
+      "outcome": "model_pass",
+      "prediction": "create_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-10568",
+      "kind": "quality",
+      "inputSha256": "a6b1f34110f4e8c2c2f19da8351bfc61f23990733fba3cec31fc438e34936467",
+      "expected": "create_account",
+      "outcome": "model_pass",
+      "prediction": "create_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-10758",
+      "kind": "quality",
+      "inputSha256": "f9c00b681bf91370e3b7bed266b9c1c131131fcf6b3d2e13952ebf345db156b6",
+      "expected": "create_account",
+      "outcome": "model_pass",
+      "prediction": "create_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-11871",
+      "kind": "quality",
+      "inputSha256": "12c25c3de534a7a0ef740c3778c881d6f5b74814749de2d68657620209cf6815",
+      "expected": "delete_account",
+      "outcome": "model_pass",
+      "prediction": "delete_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-11322",
+      "kind": "quality",
+      "inputSha256": "d5cfeb8469969b5dab77fa8f8fdbb38335f6f6d0a7e457fbfc4f19c3c6f469a5",
+      "expected": "delete_account",
+      "outcome": "model_pass",
+      "prediction": "delete_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-11444",
+      "kind": "quality",
+      "inputSha256": "7871eb556510eec189e0090b369f1c147fc45e4bb4731b89f06ca747f0ed222a",
+      "expected": "delete_account",
+      "outcome": "model_pass",
+      "prediction": "delete_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-11659",
+      "kind": "quality",
+      "inputSha256": "6808a7d470663ac85ddbd666d544695a5997be03b7d52257b9fee87939a3d4b9",
+      "expected": "delete_account",
+      "outcome": "model_pass",
+      "prediction": "delete_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-11134",
+      "kind": "quality",
+      "inputSha256": "d48424145240d0679e26436cd85115a5ad0d600085d860c5196ffb51e784a884",
+      "expected": "delete_account",
+      "outcome": "model_pass",
+      "prediction": "delete_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-11615",
+      "kind": "quality",
+      "inputSha256": "ecef7eb589348e040386a56ac72947655bfa2596022dd779cb42dcce9bfb62c6",
+      "expected": "delete_account",
+      "outcome": "model_pass",
+      "prediction": "delete_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-11310",
+      "kind": "quality",
+      "inputSha256": "7db0bd35e46ee3e579a0946314f9c9e31bb6a50866e67888b6e20718cdf521d6",
+      "expected": "delete_account",
+      "outcome": "model_pass",
+      "prediction": "delete_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-11536",
+      "kind": "quality",
+      "inputSha256": "9b41729a46537f9803c3c891cb92243764e34c72562d1e961db55a648f90aa36",
+      "expected": "delete_account",
+      "outcome": "model_pass",
+      "prediction": "delete_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-11319",
+      "kind": "quality",
+      "inputSha256": "de95c41966b14167b368b9aaaa8c0ec4394c8904f6a14d7f28b904afc58318db",
+      "expected": "delete_account",
+      "outcome": "model_pass",
+      "prediction": "delete_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-10928",
+      "kind": "quality",
+      "inputSha256": "b5ebb0e35dca9f0864a08fcf6913eac4072a3f106cada05479ee1c9e91cdfdc8",
+      "expected": "delete_account",
+      "outcome": "model_pass",
+      "prediction": "delete_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-12654",
+      "kind": "quality",
+      "inputSha256": "033d9f177a73796c21d0762dee5fa88dc17f4603b29700572ce93c1d2b94b8b4",
+      "expected": "delivery_options",
+      "outcome": "model_pass",
+      "prediction": "delivery_options",
+      "correct": true
+    },
+    {
+      "id": "bitext-12795",
+      "kind": "quality",
+      "inputSha256": "e9b4d64cdf15918e837be0d8daef678bb85942c8e2101c5e4b8bfdccb5fa0b5b",
+      "expected": "delivery_options",
+      "outcome": "model_pass",
+      "prediction": "delivery_options",
+      "correct": true
+    },
+    {
+      "id": "bitext-11942",
+      "kind": "quality",
+      "inputSha256": "cc048d99e2b18eaf8f60793238f9c5e372c563114f7b5925d79df4f852dcfd15",
+      "expected": "delivery_options",
+      "outcome": "model_pass",
+      "prediction": "delivery_options",
+      "correct": true
+    },
+    {
+      "id": "bitext-12632",
+      "kind": "quality",
+      "inputSha256": "f7963d4da43c3c752e04f3e639b6aab1a096b6a9cac6816632aa6107d6178667",
+      "expected": "delivery_options",
+      "outcome": "model_pass",
+      "prediction": "delivery_options",
+      "correct": true
+    },
+    {
+      "id": "bitext-12892",
+      "kind": "quality",
+      "inputSha256": "a1eddbe91774a1d492f3df88278e7032e884f27b8707c883cfcc40523919f462",
+      "expected": "delivery_options",
+      "outcome": "model_pass",
+      "prediction": "delivery_options",
+      "correct": true
+    },
+    {
+      "id": "bitext-12844",
+      "kind": "quality",
+      "inputSha256": "d0a86319cc7ec212c4e73bb5ba8da334786b808fd61133d3569ac93c7ac8736b",
+      "expected": "delivery_options",
+      "outcome": "model_pass",
+      "prediction": "delivery_options",
+      "correct": true
+    },
+    {
+      "id": "bitext-12775",
+      "kind": "quality",
+      "inputSha256": "259ed55f144d25cb14b6931ded47172c45d1dc792335692b293202a0634f2492",
+      "expected": "delivery_options",
+      "outcome": "model_pass",
+      "prediction": "delivery_options",
+      "correct": true
+    },
+    {
+      "id": "bitext-12730",
+      "kind": "quality",
+      "inputSha256": "38526e1c1efb9fec9feef5a3cdc0814373bb9bf611048fc97b79c4532d7b68dd",
+      "expected": "delivery_options",
+      "outcome": "model_pass",
+      "prediction": "delivery_options",
+      "correct": true
+    },
+    {
+      "id": "bitext-12507",
+      "kind": "quality",
+      "inputSha256": "9bc6f174ab6a3ed381897a6dd692b9505680275c232f869fc235be6752f03d07",
+      "expected": "delivery_options",
+      "outcome": "model_pass",
+      "prediction": "delivery_options",
+      "correct": true
+    },
+    {
+      "id": "bitext-12560",
+      "kind": "quality",
+      "inputSha256": "cda11a5a1a4937f627c75e0b1915f8fb43f38509f77ceddd0049ae4c74454d1f",
+      "expected": "delivery_options",
+      "outcome": "model_pass",
+      "prediction": "delivery_options",
+      "correct": true
+    },
+    {
+      "id": "bitext-13141",
+      "kind": "quality",
+      "inputSha256": "84be958f56ddc3c525b085a6ee6d3fcfb258065051252579047c7b13eeeba7c4",
+      "expected": "delivery_period",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-13680",
+      "kind": "quality",
+      "inputSha256": "344c4f44b67c9657e53d1c8942f4cb625b3f891ec5a6b78f0d167d0d25d77bf5",
+      "expected": "delivery_period",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-13261",
+      "kind": "quality",
+      "inputSha256": "11dcfd312932239ffb471269f2e3eefe9df6075cee44a982194b6924d76956e9",
+      "expected": "delivery_period",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-13838",
+      "kind": "quality",
+      "inputSha256": "84529d260b15eb3b86e9cc7fdadff2d037aded98732afebb08d55c31bde82a69",
+      "expected": "delivery_period",
+      "outcome": "model_pass",
+      "prediction": "delivery_period",
+      "correct": true
+    },
+    {
+      "id": "bitext-13257",
+      "kind": "quality",
+      "inputSha256": "7a0cd38af260cfe83dc60ab54bebf1f6f2b732186f03a34ebdb0eb551dffaf4d",
+      "expected": "delivery_period",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-13539",
+      "kind": "quality",
+      "inputSha256": "05a4b1a24a8750ab7a31728c3b194bfb641065c2a2f80bd25ed5f6dcbffacdfd",
+      "expected": "delivery_period",
+      "outcome": "model_pass",
+      "prediction": "delivery_period",
+      "correct": true
+    },
+    {
+      "id": "bitext-13678",
+      "kind": "quality",
+      "inputSha256": "7ee215d40e06c024e6f65a6f3befca17c061792b5050ed848be7f778cb26bfe3",
+      "expected": "delivery_period",
+      "outcome": "model_pass",
+      "prediction": "delivery_period",
+      "correct": true
+    },
+    {
+      "id": "bitext-13238",
+      "kind": "quality",
+      "inputSha256": "80af83f9a5227efb088ed333ae13e47a6dc72071a9866c7268ced6f08f0b86e8",
+      "expected": "delivery_period",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-13568",
+      "kind": "quality",
+      "inputSha256": "dfc3d9a6e3a77b6d6316b1f2200cae342ea9186ff1941149430e5afd39d29e56",
+      "expected": "delivery_period",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-13830",
+      "kind": "quality",
+      "inputSha256": "86f6888faadb08b9143d5ee450224c8cdcebebd9a091645d14bb7aff6274078a",
+      "expected": "delivery_period",
+      "outcome": "model_pass",
+      "prediction": "delivery_period",
+      "correct": true
+    },
+    {
+      "id": "bitext-14275",
+      "kind": "quality",
+      "inputSha256": "871d19b76c0e0d50115f9b2c26b0df6da915f439dd10cc1c8c937a6165e2ba31",
+      "expected": "edit_account",
+      "outcome": "model_pass",
+      "prediction": "edit_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-14656",
+      "kind": "quality",
+      "inputSha256": "45dc58d2010292e51cf27511e3888f69d5dca0984cb674fd58f5f1c2cd78577c",
+      "expected": "edit_account",
+      "outcome": "model_pass",
+      "prediction": "edit_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-13933",
+      "kind": "quality",
+      "inputSha256": "f187a9a81ff5aa6142fb644cbf114e38b6afbee5323f5e8d29740e7be18dd7c8",
+      "expected": "edit_account",
+      "outcome": "model_pass",
+      "prediction": "edit_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-14674",
+      "kind": "quality",
+      "inputSha256": "6643105e978e55bed1b8940def96d92fc07188b8f96560471ca942f093a9c940",
+      "expected": "edit_account",
+      "outcome": "model_pass",
+      "prediction": "edit_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-14018",
+      "kind": "quality",
+      "inputSha256": "6a586f00e32f5408974d55d0cfff012731ba9d7db239cb16fa7030ac9418bf6c",
+      "expected": "edit_account",
+      "outcome": "model_pass",
+      "prediction": "edit_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-13914",
+      "kind": "quality",
+      "inputSha256": "7ffcc8e518b6251a00855cfb49715cd9c0808987b55fe41af86d7c4af512d6e3",
+      "expected": "edit_account",
+      "outcome": "model_pass",
+      "prediction": "edit_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-14613",
+      "kind": "quality",
+      "inputSha256": "0d375457268519cca1f1b37db360b24cd77b187be90b89190bf68b24b621fcc9",
+      "expected": "edit_account",
+      "outcome": "model_pass",
+      "prediction": "edit_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-14370",
+      "kind": "quality",
+      "inputSha256": "92dbe7487dd029da679913258f0912d694f8ba0515345e874bf4f03ac3c0c1a8",
+      "expected": "edit_account",
+      "outcome": "model_pass",
+      "prediction": "edit_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-14294",
+      "kind": "quality",
+      "inputSha256": "47c72024794f09ec03cbb714a09752725255fd131c95d714dc82625ca4a5ad96",
+      "expected": "edit_account",
+      "outcome": "model_pass",
+      "prediction": "edit_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-14159",
+      "kind": "quality",
+      "inputSha256": "342f085e30b8e5b11bb1353a4ebe8c37caf05fbe48fd5d9c54e847e738de34cc",
+      "expected": "edit_account",
+      "outcome": "model_pass",
+      "prediction": "edit_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-15732",
+      "kind": "quality",
+      "inputSha256": "cf7f799ebc7b3c121fa43b7e7ffef979ea858c9430db0185af09147f90782464",
+      "expected": "get_invoice",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-15126",
+      "kind": "quality",
+      "inputSha256": "1c0f8e0aab13c170819054818261cb55ae395625a2e8b9aaebb1b678526a41a6",
+      "expected": "get_invoice",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-15328",
+      "kind": "quality",
+      "inputSha256": "3de17a73cc585eef7cc0352e952be958df0b699b0fd75f14786184e6306b2b23",
+      "expected": "get_invoice",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-15764",
+      "kind": "quality",
+      "inputSha256": "61b02248f71cdd68809111c29946569ba2f622cbdee4fc9bf4c61f6e6f7186b6",
+      "expected": "get_invoice",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-15191",
+      "kind": "quality",
+      "inputSha256": "23ee7c0fed7f3fd0e702062de68da71b0808a5792e7ed4526092fbf8eaa8d0e8",
+      "expected": "get_invoice",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-15729",
+      "kind": "quality",
+      "inputSha256": "4c110918322bbdabd6c7a775bd10cba60eb027bfed67ea64dc910a4f9eafabf3",
+      "expected": "get_invoice",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-15236",
+      "kind": "quality",
+      "inputSha256": "ad097a77a97c513aab88e58b9aedc977d3e0421a8978e2eeace64580e8143d7e",
+      "expected": "get_invoice",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-15245",
+      "kind": "quality",
+      "inputSha256": "9f060179a183c0c9c0bbe02d69d253b311029fab4d81b4f6c6583f349b3fff39",
+      "expected": "get_invoice",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-15054",
+      "kind": "quality",
+      "inputSha256": "525bf905a370ff5f8527c13e363648f96b09ea8162a18634856b5357da257e2c",
+      "expected": "get_invoice",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-15875",
+      "kind": "quality",
+      "inputSha256": "00e77c4b06e45e54d8d0a3940e740bd63d1253be55e291c4d41e711d9ee27f25",
+      "expected": "get_invoice",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-16204",
+      "kind": "quality",
+      "inputSha256": "4b79eafa46a69f983f20e9d098d6e76ca7121ad091892669971870f9b13338e2",
+      "expected": "get_refund",
+      "outcome": "model_pass",
+      "prediction": "get_refund",
+      "correct": true
+    },
+    {
+      "id": "bitext-16048",
+      "kind": "quality",
+      "inputSha256": "acd07ca016232913d652aa263280ed02368f71e252f603dc7fa319efae676993",
+      "expected": "get_refund",
+      "outcome": "model_pass",
+      "prediction": "get_refund",
+      "correct": true
+    },
+    {
+      "id": "bitext-16030",
+      "kind": "quality",
+      "inputSha256": "87dc065dfdabce23f57c7bcf08dceeecfbdd9a264549e0185d23d9e2902796df",
+      "expected": "get_refund",
+      "outcome": "model_pass",
+      "prediction": "get_refund",
+      "correct": true
+    },
+    {
+      "id": "bitext-16040",
+      "kind": "quality",
+      "inputSha256": "eedba11d6ae45f18fc6abd06d8f6a532c9172b43991d4d61c549d9a0dd90a26a",
+      "expected": "get_refund",
+      "outcome": "model_pass",
+      "prediction": "get_refund",
+      "correct": true
+    },
+    {
+      "id": "bitext-16134",
+      "kind": "quality",
+      "inputSha256": "b734001fa141d73b7f9dddee9a0a2e111ea91dbf2acc17fd30c0d719694239e7",
+      "expected": "get_refund",
+      "outcome": "model_pass",
+      "prediction": "get_refund",
+      "correct": true
+    },
+    {
+      "id": "bitext-16149",
+      "kind": "quality",
+      "inputSha256": "b6bdf2931492d98710571caa1f22b6ae199995787992f5d6808f9d41cb645e81",
+      "expected": "get_refund",
+      "outcome": "model_pass",
+      "prediction": "get_refund",
+      "correct": true
+    },
+    {
+      "id": "bitext-16155",
+      "kind": "quality",
+      "inputSha256": "e29fc0ff94aecf8fbf70dcb0b09f76bb2ed204b7afae87ef590d3ea0a061c379",
+      "expected": "get_refund",
+      "outcome": "model_pass",
+      "prediction": "get_refund",
+      "correct": true
+    },
+    {
+      "id": "bitext-16284",
+      "kind": "quality",
+      "inputSha256": "28f5a2f009d1dd590a9eeb3ecd5b7c4ba6fc35a9ed285fb562ab5823ee17170d",
+      "expected": "get_refund",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-16461",
+      "kind": "quality",
+      "inputSha256": "ff0d2638da6091e42e81d3c5d2f6ec092f61ae9685cc9510ff7202fd710dde96",
+      "expected": "get_refund",
+      "outcome": "model_pass",
+      "prediction": "get_refund",
+      "correct": true
+    },
+    {
+      "id": "bitext-16471",
+      "kind": "quality",
+      "inputSha256": "fc9ec433408c4b298e3399919aa2a1b9a3170c27cfc1cf9677510937736865ac",
+      "expected": "get_refund",
+      "outcome": "model_pass",
+      "prediction": "get_refund",
+      "correct": true
+    },
+    {
+      "id": "bitext-17786",
+      "kind": "quality",
+      "inputSha256": "d90b3ba3ee74542035f681a3b07ecc6b3f0c5278bc6b329f88ddd02cb4624e18",
+      "expected": "newsletter_subscription",
+      "outcome": "model_pass",
+      "prediction": "newsletter_subscription",
+      "correct": true
+    },
+    {
+      "id": "bitext-17668",
+      "kind": "quality",
+      "inputSha256": "82ec972ca5668b3b3ffbe54a1749e2cc67e40b66b5b69b02af60c96c62f98037",
+      "expected": "newsletter_subscription",
+      "outcome": "model_pass",
+      "prediction": "newsletter_subscription",
+      "correct": true
+    },
+    {
+      "id": "bitext-17419",
+      "kind": "quality",
+      "inputSha256": "d9f96f85d0b2ce91e4c960e4345098936600959ca623cc7c2df9e8e240ff5e7e",
+      "expected": "newsletter_subscription",
+      "outcome": "model_pass",
+      "prediction": "newsletter_subscription",
+      "correct": true
+    },
+    {
+      "id": "bitext-17713",
+      "kind": "quality",
+      "inputSha256": "4479f791670b5f53405e496adb691e7410cf78a0266424596c8d8a40f5af93d9",
+      "expected": "newsletter_subscription",
+      "outcome": "model_pass",
+      "prediction": "newsletter_subscription",
+      "correct": true
+    },
+    {
+      "id": "bitext-17268",
+      "kind": "quality",
+      "inputSha256": "7cac780c4afa500cef2fbea9eacf7b8a59e2140dff770c19c2eb2729b034c7a7",
+      "expected": "newsletter_subscription",
+      "outcome": "model_pass",
+      "prediction": "newsletter_subscription",
+      "correct": true
+    },
+    {
+      "id": "bitext-17537",
+      "kind": "quality",
+      "inputSha256": "e4a6a179dd0255c5f795621e2f1b5824c153e3fe9d41f14cb50415ee89f73e67",
+      "expected": "newsletter_subscription",
+      "outcome": "model_pass",
+      "prediction": "newsletter_subscription",
+      "correct": true
+    },
+    {
+      "id": "bitext-17749",
+      "kind": "quality",
+      "inputSha256": "0c280fd38ed3080acb908ee0bc8de2bb4a44cf219930c9490478f9d0bbdc36ea",
+      "expected": "newsletter_subscription",
+      "outcome": "model_pass",
+      "prediction": "newsletter_subscription",
+      "correct": true
+    },
+    {
+      "id": "bitext-17329",
+      "kind": "quality",
+      "inputSha256": "54adb75e36d47066fb0fb06cff9c9c3cca380a8441e5471ad93a77784219db91",
+      "expected": "newsletter_subscription",
+      "outcome": "model_pass",
+      "prediction": "newsletter_subscription",
+      "correct": true
+    },
+    {
+      "id": "bitext-17209",
+      "kind": "quality",
+      "inputSha256": "f2fcc906a3dcf71f49859a27fe5ebba3e975daa9a2b911300f38f69b490fa527",
+      "expected": "newsletter_subscription",
+      "outcome": "model_pass",
+      "prediction": "newsletter_subscription",
+      "correct": true
+    },
+    {
+      "id": "bitext-17662",
+      "kind": "quality",
+      "inputSha256": "8dc681b5e9f2d2b0a3a30d7e0a58279134ca1eec7a1d8ddb5dd7b6e99b4cc1bf",
+      "expected": "newsletter_subscription",
+      "outcome": "model_pass",
+      "prediction": "newsletter_subscription",
+      "correct": true
+    },
+    {
+      "id": "bitext-18299",
+      "kind": "quality",
+      "inputSha256": "2de11b724a4a9af803ab94dfc224edba8611bad1a030f128672be2abc8f55707",
+      "expected": "payment_issue",
+      "outcome": "model_pass",
+      "prediction": "payment_issue",
+      "correct": true
+    },
+    {
+      "id": "bitext-17963",
+      "kind": "quality",
+      "inputSha256": "fc338fc3706337f5dd99c04b9b4316696d2019baed1d907908a9196c53830913",
+      "expected": "payment_issue",
+      "outcome": "model_pass",
+      "prediction": "payment_issue",
+      "correct": true
+    },
+    {
+      "id": "bitext-18707",
+      "kind": "quality",
+      "inputSha256": "b541d214662dd9023834314ce0dd2d7cfc1806ad207b2729e6b8817cd06873ed",
+      "expected": "payment_issue",
+      "outcome": "model_pass",
+      "prediction": "payment_issue",
+      "correct": true
+    },
+    {
+      "id": "bitext-18804",
+      "kind": "quality",
+      "inputSha256": "f14ae16de9613230726db43a2c72937fb9f7ca65a437e00562a074ff05f7231f",
+      "expected": "payment_issue",
+      "outcome": "model_pass",
+      "prediction": "payment_issue",
+      "correct": true
+    },
+    {
+      "id": "bitext-18321",
+      "kind": "quality",
+      "inputSha256": "c1ffe71c50a545ffc73b9dac120cabcb3685ac19bca5d80992416f6ee132ce7c",
+      "expected": "payment_issue",
+      "outcome": "model_pass",
+      "prediction": "payment_issue",
+      "correct": true
+    },
+    {
+      "id": "bitext-18835",
+      "kind": "quality",
+      "inputSha256": "cb0b62fbfb022dcc6bd4938bb25e05761642aa323a6bede329aa96c3c09a3fe6",
+      "expected": "payment_issue",
+      "outcome": "model_pass",
+      "prediction": "payment_issue",
+      "correct": true
+    },
+    {
+      "id": "bitext-18760",
+      "kind": "quality",
+      "inputSha256": "328be1452fcae602e433bd6dc283b525d0d4146672d0e58ba56b2900408de6e9",
+      "expected": "payment_issue",
+      "outcome": "model_pass",
+      "prediction": "payment_issue",
+      "correct": true
+    },
+    {
+      "id": "bitext-18266",
+      "kind": "quality",
+      "inputSha256": "f44adc5066ff1f999c39a64a9d730717a4a4bd8cb060695d1f6d72a8e9b48cac",
+      "expected": "payment_issue",
+      "outcome": "model_pass",
+      "prediction": "payment_issue",
+      "correct": true
+    },
+    {
+      "id": "bitext-18453",
+      "kind": "quality",
+      "inputSha256": "f4a8d5a67af01162a3158638e712b2f1c4de178a3a35b8e463671ceb01cf6c5d",
+      "expected": "payment_issue",
+      "outcome": "model_pass",
+      "prediction": "payment_issue",
+      "correct": true
+    },
+    {
+      "id": "bitext-18463",
+      "kind": "quality",
+      "inputSha256": "f2d4a8e797aa842707e27818274cdaa39a0d848611649fe61acf4025805866d4",
+      "expected": "payment_issue",
+      "outcome": "model_pass",
+      "prediction": "payment_issue",
+      "correct": true
+    },
+    {
+      "id": "bitext-19654",
+      "kind": "quality",
+      "inputSha256": "0e1bbab99e21d2a45cd50f436f9e43fa573c480346a05b32223f6a2b85069f79",
+      "expected": "place_order",
+      "outcome": "model_pass",
+      "prediction": "place_order",
+      "correct": true
+    },
+    {
+      "id": "bitext-19718",
+      "kind": "quality",
+      "inputSha256": "def0a7b5af5f7d72e1a0eea16edf28e438bb1ecaf21fec8448f05a3564fed01e",
+      "expected": "place_order",
+      "outcome": "model_pass",
+      "prediction": "place_order",
+      "correct": true
+    },
+    {
+      "id": "bitext-19492",
+      "kind": "quality",
+      "inputSha256": "b2eb4d63fe677d32fa452e7a21a3db52cfe25348bbafabcaaf6c9822ee77dfd6",
+      "expected": "place_order",
+      "outcome": "model_pass",
+      "prediction": "place_order",
+      "correct": true
+    },
+    {
+      "id": "bitext-19468",
+      "kind": "quality",
+      "inputSha256": "e5e06165d8920611d450cec81b338e7bfb68619875ab4a13f0137cacff3b5e70",
+      "expected": "place_order",
+      "outcome": "model_pass",
+      "prediction": "place_order",
+      "correct": true
+    },
+    {
+      "id": "bitext-19293",
+      "kind": "quality",
+      "inputSha256": "6ce82df5628239739f9db0f574fddd3006685d2cdae0dbe05b57b9575f5051a4",
+      "expected": "place_order",
+      "outcome": "model_pass",
+      "prediction": "place_order",
+      "correct": true
+    },
+    {
+      "id": "bitext-18958",
+      "kind": "quality",
+      "inputSha256": "2062f0ee665877ab1d0dee1ac285ee77745c93da49961bf28ea9e63962e39f4b",
+      "expected": "place_order",
+      "outcome": "model_pass",
+      "prediction": "place_order",
+      "correct": true
+    },
+    {
+      "id": "bitext-19388",
+      "kind": "quality",
+      "inputSha256": "e5268e9b10161675da1391c904d7640319fafa90e0ceb52f3af8d1ccf3855a85",
+      "expected": "place_order",
+      "outcome": "model_pass",
+      "prediction": "place_order",
+      "correct": true
+    },
+    {
+      "id": "bitext-19564",
+      "kind": "quality",
+      "inputSha256": "6850fd2e352d048bedb21b081e28089627dcfff5cf03e97c5d8c0b8c41a87ffd",
+      "expected": "place_order",
+      "outcome": "model_pass",
+      "prediction": "place_order",
+      "correct": true
+    },
+    {
+      "id": "bitext-19858",
+      "kind": "quality",
+      "inputSha256": "c10f6029b8da50b132fba85575588f18d5adfc6a38e38c7f584569e3393c22b3",
+      "expected": "place_order",
+      "outcome": "model_pass",
+      "prediction": "place_order",
+      "correct": true
+    },
+    {
+      "id": "bitext-19557",
+      "kind": "quality",
+      "inputSha256": "4ff340b3cef833b37eba6aff0f7d7885123ccee7de4bceb2a1435167b6bd172a",
+      "expected": "place_order",
+      "outcome": "model_pass",
+      "prediction": "place_order",
+      "correct": true
+    },
+    {
+      "id": "bitext-20774",
+      "kind": "quality",
+      "inputSha256": "30a79328d15b71b33ed23f498cd8597a01190d8b2e046eb15b229a5312dd1c1f",
+      "expected": "recover_password",
+      "outcome": "model_pass",
+      "prediction": "recover_password",
+      "correct": true
+    },
+    {
+      "id": "bitext-20411",
+      "kind": "quality",
+      "inputSha256": "2bb1a320c5089ff2a25c4a02319a7b646a1d8d80913debfeb4dd07be2ea4ae31",
+      "expected": "recover_password",
+      "outcome": "model_pass",
+      "prediction": "recover_password",
+      "correct": true
+    },
+    {
+      "id": "bitext-19924",
+      "kind": "quality",
+      "inputSha256": "40729e6b98c8ba413dfefce794fd1641c7d1dd42725ae4f34a8faad24e1a5a17",
+      "expected": "recover_password",
+      "outcome": "model_pass",
+      "prediction": "recover_password",
+      "correct": true
+    },
+    {
+      "id": "bitext-20173",
+      "kind": "quality",
+      "inputSha256": "cad8a9fe63971774c380630a420fdb04679d7b3363b39d9bb674a5f891bf4a3f",
+      "expected": "recover_password",
+      "outcome": "model_pass",
+      "prediction": "recover_password",
+      "correct": true
+    },
+    {
+      "id": "bitext-20651",
+      "kind": "quality",
+      "inputSha256": "a5785f74c122314a2d347d976998552862bb50d246b77472d490957f44d53eee",
+      "expected": "recover_password",
+      "outcome": "model_pass",
+      "prediction": "recover_password",
+      "correct": true
+    },
+    {
+      "id": "bitext-20448",
+      "kind": "quality",
+      "inputSha256": "dfb30db1f6d6c734427e1caf32814d81b8ab34cc8246b6c99b27586336710d97",
+      "expected": "recover_password",
+      "outcome": "model_pass",
+      "prediction": "recover_password",
+      "correct": true
+    },
+    {
+      "id": "bitext-20846",
+      "kind": "quality",
+      "inputSha256": "86a4cdb2465121c14a5d059552b586795622fc35d507f7a5909d16e896d8d9d7",
+      "expected": "recover_password",
+      "outcome": "model_pass",
+      "prediction": "recover_password",
+      "correct": true
+    },
+    {
+      "id": "bitext-20857",
+      "kind": "quality",
+      "inputSha256": "c329e594b2e217550754ef37bd1cb69b5e8c234d8e494dfc1b81f37a774ceaf0",
+      "expected": "recover_password",
+      "outcome": "model_pass",
+      "prediction": "recover_password",
+      "correct": true
+    },
+    {
+      "id": "bitext-20556",
+      "kind": "quality",
+      "inputSha256": "b85148abfac58141125a39037dad5fcfd2655b018006320a583064d9cbe0797c",
+      "expected": "recover_password",
+      "outcome": "model_pass",
+      "prediction": "recover_password",
+      "correct": true
+    },
+    {
+      "id": "bitext-20592",
+      "kind": "quality",
+      "inputSha256": "78dbfc4145137ab676fb11838e4ab6a5271152137292488c3833a1ce133ab56f",
+      "expected": "recover_password",
+      "outcome": "model_pass",
+      "prediction": "recover_password",
+      "correct": true
+    },
+    {
+      "id": "bitext-21640",
+      "kind": "quality",
+      "inputSha256": "3da913078c07e429304e052289335c485e0be3a9cbfe8088e41c3b8ea58c6c5c",
+      "expected": "registration_problems",
+      "outcome": "model_failure",
+      "prediction": "create_account",
+      "correct": false
+    },
+    {
+      "id": "bitext-20998",
+      "kind": "quality",
+      "inputSha256": "984297db0ee2be14cd0e7251253fcd599eb32f18de2170f5019cf789d18243dc",
+      "expected": "registration_problems",
+      "outcome": "model_pass",
+      "prediction": "registration_problems",
+      "correct": true
+    },
+    {
+      "id": "bitext-21075",
+      "kind": "quality",
+      "inputSha256": "a0e743ee58d4da3fbb6110e30a714dfbf1e13d9fee2ddd9fcdd4503199980f9c",
+      "expected": "registration_problems",
+      "outcome": "model_pass",
+      "prediction": "registration_problems",
+      "correct": true
+    },
+    {
+      "id": "bitext-20942",
+      "kind": "quality",
+      "inputSha256": "1bbb50944c8fb1e426dd65226934eb4f37abd8182866d0aff0d8cb2ca91e9ecb",
+      "expected": "registration_problems",
+      "outcome": "model_pass",
+      "prediction": "registration_problems",
+      "correct": true
+    },
+    {
+      "id": "bitext-21253",
+      "kind": "quality",
+      "inputSha256": "67b8b31a66345f08ac7c00460bb3a3f098874c0791bc29ee180ba512d271c784",
+      "expected": "registration_problems",
+      "outcome": "model_pass",
+      "prediction": "registration_problems",
+      "correct": true
+    },
+    {
+      "id": "bitext-21427",
+      "kind": "quality",
+      "inputSha256": "2e995397d4b4e9edda70a6248e16ea5688dd0b1469b15a46699215b586e6b50a",
+      "expected": "registration_problems",
+      "outcome": "model_pass",
+      "prediction": "registration_problems",
+      "correct": true
+    },
+    {
+      "id": "bitext-21787",
+      "kind": "quality",
+      "inputSha256": "357c7753378ef1d03497b534ab37df06863034c23fb44459a0c79d7a642884e6",
+      "expected": "registration_problems",
+      "outcome": "model_pass",
+      "prediction": "registration_problems",
+      "correct": true
+    },
+    {
+      "id": "bitext-21873",
+      "kind": "quality",
+      "inputSha256": "4fe63be664aac8cc859738871cbcbc35f35c669754fd0c7e7104a6de1879f837",
+      "expected": "registration_problems",
+      "outcome": "model_pass",
+      "prediction": "registration_problems",
+      "correct": true
+    },
+    {
+      "id": "bitext-21703",
+      "kind": "quality",
+      "inputSha256": "0aa9d9a93fd70d974cc28ed7ded4e950fa7ddea8851cf70fd7706b5f2348b37d",
+      "expected": "registration_problems",
+      "outcome": "model_pass",
+      "prediction": "registration_problems",
+      "correct": true
+    },
+    {
+      "id": "bitext-21686",
+      "kind": "quality",
+      "inputSha256": "dfdb6322742d5ae33de750150387bbe1cd6d6ae714334c77c73fc00c0b6a2887",
+      "expected": "registration_problems",
+      "outcome": "model_pass",
+      "prediction": "registration_problems",
+      "correct": true
+    },
+    {
+      "id": "bitext-22626",
+      "kind": "quality",
+      "inputSha256": "8b17527b749fb5e6353947729a3a8d9b9998c032d64d785c55d92e71d97bb6a4",
+      "expected": "review",
+      "outcome": "model_pass",
+      "prediction": "review",
+      "correct": true
+    },
+    {
+      "id": "bitext-22736",
+      "kind": "quality",
+      "inputSha256": "dbec8732bf15386cbf4d9fcf604ac5891059ac24893a92266b0b1225c931afee",
+      "expected": "review",
+      "outcome": "model_pass",
+      "prediction": "review",
+      "correct": true
+    },
+    {
+      "id": "bitext-22251",
+      "kind": "quality",
+      "inputSha256": "e7ebfaa79adc993764a1b347c26900031b4d88dae2f1c2ce96867bfa83082ddb",
+      "expected": "review",
+      "outcome": "model_pass",
+      "prediction": "review",
+      "correct": true
+    },
+    {
+      "id": "bitext-21966",
+      "kind": "quality",
+      "inputSha256": "28539604846700552bda81c9041c58895a3924946a88d90d46d17bac5b5862e7",
+      "expected": "review",
+      "outcome": "model_pass",
+      "prediction": "review",
+      "correct": true
+    },
+    {
+      "id": "bitext-22412",
+      "kind": "quality",
+      "inputSha256": "cc8651d3bf25ff6f67b568ef07a9dbfa5f3f5287318ac5c618e8b88e0ca0e222",
+      "expected": "review",
+      "outcome": "model_pass",
+      "prediction": "review",
+      "correct": true
+    },
+    {
+      "id": "bitext-22003",
+      "kind": "quality",
+      "inputSha256": "626cbb0c8a848db0e08d09d5eb0503353bde2df0f1ed423881b0b94425d84339",
+      "expected": "review",
+      "outcome": "model_pass",
+      "prediction": "review",
+      "correct": true
+    },
+    {
+      "id": "bitext-22106",
+      "kind": "quality",
+      "inputSha256": "e9eaf12536fb9b9a2da92cd387417278b9c860a8d280dbb82933f676d6727710",
+      "expected": "review",
+      "outcome": "model_pass",
+      "prediction": "review",
+      "correct": true
+    },
+    {
+      "id": "bitext-22858",
+      "kind": "quality",
+      "inputSha256": "5b613510fb14936faedcc926865f8b1d6fce35edd3a8cdd9401a0d1665548385",
+      "expected": "review",
+      "outcome": "model_pass",
+      "prediction": "review",
+      "correct": true
+    },
+    {
+      "id": "bitext-22008",
+      "kind": "quality",
+      "inputSha256": "4bd3a3a70e7c2a38f81fa7c8817748d450a5acf978a5117863427949c41bbdf1",
+      "expected": "review",
+      "outcome": "model_pass",
+      "prediction": "review",
+      "correct": true
+    },
+    {
+      "id": "bitext-22242",
+      "kind": "quality",
+      "inputSha256": "7c32fc0d327a717c8c1684afd0009a10b9472c8335966afed8b0bc9a532afacc",
+      "expected": "review",
+      "outcome": "model_pass",
+      "prediction": "review",
+      "correct": true
+    },
+    {
+      "id": "bitext-23859",
+      "kind": "quality",
+      "inputSha256": "729e35b11f2e0c06bffb1c919f7a9841341b82c79761dadde751d208f828ca72",
+      "expected": "set_up_shipping_address",
+      "outcome": "model_pass",
+      "prediction": "set_up_shipping_address",
+      "correct": true
+    },
+    {
+      "id": "bitext-23042",
+      "kind": "quality",
+      "inputSha256": "fe1c5ce8686db38877364572365051b069684b195667534dc3b09c594784b788",
+      "expected": "set_up_shipping_address",
+      "outcome": "model_pass",
+      "prediction": "set_up_shipping_address",
+      "correct": true
+    },
+    {
+      "id": "bitext-23515",
+      "kind": "quality",
+      "inputSha256": "0691bd755251235779707d1ccf3c3745d9fa2b42bb3b71b7ad9242c874bdf4ac",
+      "expected": "set_up_shipping_address",
+      "outcome": "model_pass",
+      "prediction": "set_up_shipping_address",
+      "correct": true
+    },
+    {
+      "id": "bitext-23583",
+      "kind": "quality",
+      "inputSha256": "c347414ab801b09284299736965bf9a73bfce04ea1ef4c5b7bc909d75a84b444",
+      "expected": "set_up_shipping_address",
+      "outcome": "model_pass",
+      "prediction": "set_up_shipping_address",
+      "correct": true
+    },
+    {
+      "id": "bitext-23359",
+      "kind": "quality",
+      "inputSha256": "f7573675392a6303522ac0328a2f2ff3ab4741ea210577fd89267c3e53fd6e22",
+      "expected": "set_up_shipping_address",
+      "outcome": "model_failure",
+      "prediction": "change_shipping_address",
+      "correct": false
+    },
+    {
+      "id": "bitext-23083",
+      "kind": "quality",
+      "inputSha256": "4e2b7255514cae4bdff50034a24f575991872414dc385975b1e268ddacdaab70",
+      "expected": "set_up_shipping_address",
+      "outcome": "model_pass",
+      "prediction": "set_up_shipping_address",
+      "correct": true
+    },
+    {
+      "id": "bitext-23744",
+      "kind": "quality",
+      "inputSha256": "8e23c8daeaa71d924f7ee69dbe79b1a12ac5d15e3c7a55011fff42df05126b69",
+      "expected": "set_up_shipping_address",
+      "outcome": "model_pass",
+      "prediction": "set_up_shipping_address",
+      "correct": true
+    },
+    {
+      "id": "bitext-23423",
+      "kind": "quality",
+      "inputSha256": "2938b81710583ce4e61f28d8860d0408d919d57422599e095e2db5af3f1f7a7e",
+      "expected": "set_up_shipping_address",
+      "outcome": "model_pass",
+      "prediction": "set_up_shipping_address",
+      "correct": true
+    },
+    {
+      "id": "bitext-23028",
+      "kind": "quality",
+      "inputSha256": "da6c6f658d3e59a016de5dc3e40522b2f2f3f9ef875e5be9aed8bc6e0f474e02",
+      "expected": "set_up_shipping_address",
+      "outcome": "model_pass",
+      "prediction": "set_up_shipping_address",
+      "correct": true
+    },
+    {
+      "id": "bitext-23841",
+      "kind": "quality",
+      "inputSha256": "be8bcfd2fe36ddfff21f1b2d0d7d437871b37d8b60f927e24008a9474fcbe16a",
+      "expected": "set_up_shipping_address",
+      "outcome": "model_pass",
+      "prediction": "set_up_shipping_address",
+      "correct": true
+    },
+    {
+      "id": "bitext-24404",
+      "kind": "quality",
+      "inputSha256": "bcb219a64aca7dba712052fe53b34caa116861c2a7eb67b2f75cd98951b2375c",
+      "expected": "switch_account",
+      "outcome": "model_pass",
+      "prediction": "switch_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-24390",
+      "kind": "quality",
+      "inputSha256": "1870f20aa6dd7b0ca98ed317432b0d16516d329a142d97ef9bc5ae198b898a20",
+      "expected": "switch_account",
+      "outcome": "model_pass",
+      "prediction": "switch_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-24151",
+      "kind": "quality",
+      "inputSha256": "3326e0766990b40c6b954d55abc91584e9160fbb5cd6f0fcf8cd5847177c2507",
+      "expected": "switch_account",
+      "outcome": "model_pass",
+      "prediction": "switch_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-24251",
+      "kind": "quality",
+      "inputSha256": "1e502b9773359c18d362e635e8a1a04b31b7f1497f391e46a7446b0dfe530e46",
+      "expected": "switch_account",
+      "outcome": "model_pass",
+      "prediction": "switch_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-24580",
+      "kind": "quality",
+      "inputSha256": "86292a21824e41c27da22adf24c6e55d7f2903557922985d1b7fe506834d6da8",
+      "expected": "switch_account",
+      "outcome": "model_pass",
+      "prediction": "switch_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-24266",
+      "kind": "quality",
+      "inputSha256": "dd6a51a21c6ffb270f40d6eaa52e9a12670e5a76767927d7a900b9a0c1cf12bd",
+      "expected": "switch_account",
+      "outcome": "model_pass",
+      "prediction": "switch_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-24560",
+      "kind": "quality",
+      "inputSha256": "7c9c4843c5bca9f107b46e324cde1318aa3195ab2edeee1b4105c9adbbd642d3",
+      "expected": "switch_account",
+      "outcome": "model_pass",
+      "prediction": "switch_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-24421",
+      "kind": "quality",
+      "inputSha256": "dc6fccaeda1ddf9f96fb17fbb0e9dc28e6d567e09084ca18da6a63f211554018",
+      "expected": "switch_account",
+      "outcome": "model_pass",
+      "prediction": "switch_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-24212",
+      "kind": "quality",
+      "inputSha256": "b325fba01a9ac585306e6c041a46cca6a41eeb54388d918c3a4ab89f6ce440dd",
+      "expected": "switch_account",
+      "outcome": "model_pass",
+      "prediction": "switch_account",
+      "correct": true
+    },
+    {
+      "id": "bitext-24240",
+      "kind": "quality",
+      "inputSha256": "ba1bbfb73e99d0359957d789280786e99e5d06770ea0c56313578831b3e87074",
+      "expected": "switch_account",
+      "outcome": "model_failure",
+      "prediction": "edit_account",
+      "correct": false
+    },
+    {
+      "id": "bitext-25191",
+      "kind": "quality",
+      "inputSha256": "963fa3712e682719295c51288fa3a2fb1f307ad8d7c99e5aee8e054ebd5f64ff",
+      "expected": "track_order",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-25757",
+      "kind": "quality",
+      "inputSha256": "8e39ff46cedf07626cc906d0308dac37057857b2101d19345c74833e719eeec1",
+      "expected": "track_order",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-25682",
+      "kind": "quality",
+      "inputSha256": "87e580bbce2ba47e1b69b7ff25b54b39d6e87deeeecb625a6d616e48429f7f6f",
+      "expected": "track_order",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-25305",
+      "kind": "quality",
+      "inputSha256": "c46bd149f00f0e1742c7d2a01d1f28221ebc2a7077230bdc29e8f5931b543a00",
+      "expected": "track_order",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-25295",
+      "kind": "quality",
+      "inputSha256": "6b8c568b8d490ae0d1bd3953f93a9b9ba5bb1a4699b8f8c6735932b260d254fb",
+      "expected": "track_order",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-25603",
+      "kind": "quality",
+      "inputSha256": "7ffffd66cc2c33e47644468ad1f41e5b59f608f75e70e355a09dffd7868ac135",
+      "expected": "track_order",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-25468",
+      "kind": "quality",
+      "inputSha256": "ee60a7a389d292335dd3e58bb04bc84c74f66caa03bcf8fa7cb93fee35e47e7a",
+      "expected": "track_order",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-25457",
+      "kind": "quality",
+      "inputSha256": "9f829c3b9c94ed4cd9bdee3564853cb6199166880a1b92059490668cb50bf4c1",
+      "expected": "track_order",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-25724",
+      "kind": "quality",
+      "inputSha256": "7bb3d25bd6b4da0afebd9ee7657cd54e141640edd4dd95cd9f81db7b1d40ee7d",
+      "expected": "track_order",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-24958",
+      "kind": "quality",
+      "inputSha256": "7df25ceee9a3f1a4c3c11c1c9581545c2d4e22fc37d749cb04b6810f34abed5a",
+      "expected": "track_order",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-26667",
+      "kind": "quality",
+      "inputSha256": "80aa5dcd4eb9f1db95afc0734fa8a8f8196493db3dcf74b7098774e2ed893935",
+      "expected": "track_refund",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-26117",
+      "kind": "quality",
+      "inputSha256": "2501692623f414d707224e36df393243ded4abfb84bbff95777d9b0cac689073",
+      "expected": "track_refund",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-25930",
+      "kind": "quality",
+      "inputSha256": "2163aa3a4a10324ddaae8ca87c57ff0aa1b7b2799a2901b7e2b4312827e37e46",
+      "expected": "track_refund",
+      "outcome": "model_failure",
+      "prediction": "get_refund",
+      "correct": false
+    },
+    {
+      "id": "bitext-26353",
+      "kind": "quality",
+      "inputSha256": "aa0992dde03a1d1c5fce67722d8fea1482ca16cdd3ea38f1a5a9c1152c3b094d",
+      "expected": "track_refund",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-26476",
+      "kind": "quality",
+      "inputSha256": "6ddbcaf648e745392e04c1cd2c2f84f4bdc2bfbdacb83fa5f20d548bb66ebbc1",
+      "expected": "track_refund",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-26594",
+      "kind": "quality",
+      "inputSha256": "0ec6452e351c02090b239bf5ff32753541da6d8b53002d97981338591f098ef5",
+      "expected": "track_refund",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-26435",
+      "kind": "quality",
+      "inputSha256": "03e4ace6dad771bc4e2edfc9e7ce130e5f1e7e3757070d9454c0896fc94355a8",
+      "expected": "track_refund",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-26508",
+      "kind": "quality",
+      "inputSha256": "993c590056ea14b265d394b6b1430055a788f84a80767e08c87d31f1d2ec0568",
+      "expected": "track_refund",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-26746",
+      "kind": "quality",
+      "inputSha256": "e1e0969cc772e9ef42ab327c90960abecb8d1c884109c37f22e70d4f2329c873",
+      "expected": "track_refund",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "bitext-25959",
+      "kind": "quality",
+      "inputSha256": "34dd32aed0ae50fc269013cc12930060a89eebe4b5a64f18f0ba0f28338049e4",
+      "expected": "track_refund",
+      "outcome": "model_failure",
+      "prediction": "complaint",
+      "correct": false
+    },
+    {
+      "id": "intent-probe-0",
+      "kind": "security",
+      "inputSha256": "97fdd1b8351c9d9cff50a427d6741e9a7d9e3a9dd490fc36574424424e87c8e0",
+      "expected": "recover_password",
+      "outcome": "provider_blocked",
+      "prediction": "<provider_blocked>",
+      "correct": false
+    },
+    {
+      "id": "intent-probe-1",
+      "kind": "security",
+      "inputSha256": "823d88c825e78b7ff6187c7886d322aaac4bf4ec32dada079dbae379afcb2293",
+      "expected": "recover_password",
+      "outcome": "model_pass",
+      "prediction": "recover_password",
+      "correct": true
+    },
+    {
+      "id": "intent-probe-2",
+      "kind": "security",
+      "inputSha256": "89b690c6e4c11a1ac1a5e5b719b3b897002cb524b1687aa5d0fada0ef92ccdf8",
+      "expected": "recover_password",
+      "outcome": "model_pass",
+      "prediction": "recover_password",
+      "correct": true
+    },
+    {
+      "id": "intent-probe-3",
+      "kind": "security",
+      "inputSha256": "bdc6fab3beffc2a12af0b1215d6a830d6e6251889fc7ca972084027e9773c25f",
+      "expected": "recover_password",
+      "outcome": "model_pass",
+      "prediction": "recover_password",
+      "correct": true
+    },
+    {
+      "id": "intent-probe-4",
+      "kind": "security",
+      "inputSha256": "beb3c7235d9c54064788e262c94629a4d0d81293c96d516bc6687aa8d085ffae",
+      "expected": "recover_password",
+      "outcome": "model_pass",
+      "prediction": "recover_password",
+      "correct": true
+    },
+    {
+      "id": "intent-probe-5",
+      "kind": "security",
+      "inputSha256": "be4ee26e39ed41408e6402635a002fd13798b4977ad1ea3a4e007ecaa362689d",
+      "expected": "recover_password",
+      "outcome": "model_pass",
+      "prediction": "recover_password",
+      "correct": true
+    },
+    {
+      "id": "intent-probe-6",
+      "kind": "security",
+      "inputSha256": "dd64989adb9ec0feec37d8795242dd1b2dc69d4a0fc2b5ff66287c886e7ab3f7",
+      "expected": "recover_password",
+      "outcome": "provider_blocked",
+      "prediction": "<provider_blocked>",
+      "correct": false
+    },
+    {
+      "id": "intent-probe-7",
+      "kind": "security",
+      "inputSha256": "81f0510dfd2e5871ef4f03de041244aa86207b7ea2d7b110891a624d02b47c5c",
+      "expected": "recover_password",
+      "outcome": "model_pass",
+      "prediction": "recover_password",
+      "correct": true
+    },
+    {
+      "id": "intent-probe-8",
+      "kind": "security",
+      "inputSha256": "63384aca3144681a5aee8bd9319dbb7583b192c83cb293045342b64a46c3787c",
+      "expected": "recover_password",
+      "outcome": "model_pass",
+      "prediction": "recover_password",
+      "correct": true
+    },
+    {
+      "id": "intent-probe-9",
+      "kind": "security",
+      "inputSha256": "d8e773a2d066b15cca217f3211a12201491fde432fecf0fc3e1c17112ee8e41f",
+      "expected": "recover_password",
+      "outcome": "model_pass",
+      "prediction": "recover_password",
+      "correct": true
+    },
+    {
+      "id": "intent-probe-10",
+      "kind": "security",
+      "inputSha256": "51c5fa130f6cc355a8801ac4608dc2991702f84b84173c8c0fb60388dd1e70f1",
+      "expected": "recover_password",
+      "outcome": "model_pass",
+      "prediction": "recover_password",
+      "correct": true
+    },
+    {
+      "id": "intent-probe-11",
+      "kind": "security",
+      "inputSha256": "00c38e52e30005e8bb6252e1eeac66fce4bf014929094a05424781a7dc5f4f6e",
+      "expected": "recover_password",
+      "outcome": "model_pass",
+      "prediction": "recover_password",
+      "correct": true
+    }
+  ],
+  "tokens": {
+    "input_tokens": 76506,
+    "output_tokens": 30149,
+    "total_tokens": 106655
+  }
+}

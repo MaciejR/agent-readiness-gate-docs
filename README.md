@@ -2,7 +2,7 @@
 
 A Forge app for Jira that evaluates supplied agent-release evidence with deterministic policy checks, explicit human approval, and version-aware history.
 
-This prototype is for evaluation with synthetic data. READY means the supplied evidence satisfies the configured policy; it is not a safety guarantee or a Jira workflow restriction. Imported evidence is not independently attested.
+This prototype is for evaluation with synthetic fixtures and a disclosed hybrid-synthetic public benchmark. READY means the supplied evidence satisfies the configured policy; it is not a safety guarantee or a Jira workflow restriction. Imported evidence is not independently attested.
 
 [Watch the 2:12 real Jira interaction demo](https://www.youtube.com/watch?v=5ffNGOeyhG0) · [Privacy notice](privacy.md) · [Evaluation terms](terms.md)
 
@@ -31,6 +31,10 @@ Reading requires access to the Jira issue; imports require Edit Issues; approval
 [Watch the 2:10 measured-evaluation and Rovo supplement](https://www.youtube.com/watch?v=DTPsB5Yrirk). Actual Jira/Rovo capture with synthetic English narration; complements the main regression/remediation video.
 
 Two actual GPT-5 mini runs now have [public raw reports](runs/README.md). The [acceptance record](executed-acceptance.md) documents measured JSON import, same-version approval invalidation, a distinct test account and an actual Rovo response, with explicit limitations. Use the [optional runner](executed-evaluation.md) to reproduce the narrow synthetic evaluation.
+
+## Broader frozen benchmark
+
+The [270-case Bitext demonstration](benchmarks/bitext/README.md) measured 92.96% for the baseline and 73.70% for a disclosed intentional regression. Both executions completed without errors. The results and limitations are public; live acceptance of the new authenticated ingestion flow is still pending.
 
 ## Prepare your own review
 
