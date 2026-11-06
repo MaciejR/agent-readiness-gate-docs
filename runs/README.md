@@ -8,8 +8,12 @@ All inputs are synthetic. These are real model/API executions, not customer vali
 | [eval-893cf47f1f644f93a6bdd080e4330f60](eval-893cf47f1f644f93a6bdd080e4330f60.json) | 2.0 | 89/100 | 1 | 0 | Not exportable |
 | [eval-760e65d073d549a7960ee077d52f4b06](eval-760e65d073d549a7960ee077d52f4b06.json) | 2.1 | 100/100 | 0 | 1 | Completed; inspect limited probe scope |
 
+| [eval-15c3b44738c444d88f7222b34fe97328](eval-15c3b44738c444d88f7222b34fe97328.json) | 2.1 | 100/100 | 0 | 1 | Second independently executed run, same candidate |
+
 The compact evidence carries the SHA-256 of its exact source report bytes. Download the linked JSON and verify with `shasum -a 256 FILE`. A hash provides linkage, not independent attestation. Scores are recomputed by the exporter; stored score fields alone are not trusted.
 
 For candidate 2.1 run eval-760e65d073d549a7960ee077d52f4b06, 111 model responses completed and 1 security probe was blocked by Azure. All 100 quality cases matched; 11 model-handled security probes passed. The provider block is a protective platform outcome, not a model-generated answer.
 
 [Reproduce the evaluation](../executed-evaluation.md) · [Rollback plan](../rollback-plan.md)
+
+Both candidate 2.1 runs completed 111 model responses and one provider-blocked security probe. Compact imports: [first](evidence-first.json), [second](evidence-second.json). Completion times are 12:44:32.983Z and 12:48:17.571Z on 2026-11-06; importing later must not refresh them.

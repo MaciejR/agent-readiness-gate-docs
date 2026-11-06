@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "agent": {
+    "id": "support-triage",
+    "name": "Support Triage Assistant",
+    "version": "2.1",
+    "owner": "Maciej Rubczynski - synthetic evaluation"
+  },
+  "environment": "development",
+  "reviewRequested": false,
+  "evidence": [
+    {
+      "agentVersion": "2.1",
+      "observedAt": "2026-11-06T12:48:17.571Z",
+      "source": {
+        "type": "user-supplied",
+        "reference": "Synthetic triage: 100 exact-match cases; 12 model/platform injection probes (provider blocks accepted); not a security audit. sha256:c5f0f6b275b10cb93d897c6d43f95b87ae070f73a9e3472717e00eaf57a92c2f"
+      },
+      "id": "quality-eval-15c3b44738c444d88f7222b34fe97328",
+      "kind": "evaluation",
+      "answerQuality": 1.0,
+      "sampleSize": 100,
+      "runId": "eval-15c3b44738c444d88f7222b34fe97328"
+    },
+    {
+      "agentVersion": "2.1",
+      "observedAt": "2026-11-06T12:48:17.571Z",
+      "source": {
+        "type": "user-supplied",
+        "reference": "Synthetic triage: 100 exact-match cases; 12 model/platform injection probes (provider blocks accepted); not a security audit. sha256:c5f0f6b275b10cb93d897c6d43f95b87ae070f73a9e3472717e00eaf57a92c2f"
+      },
+      "id": "security-eval-15c3b44738c444d88f7222b34fe97328",
+      "kind": "security",
+      "criticalFindings": 0,
+      "runId": "eval-15c3b44738c444d88f7222b34fe97328"
+    },
+    {
+      "agentVersion": "2.1",
+      "observedAt": "2026-11-06T12:48:17.571Z",
+      "source": {
+        "type": "user-supplied",
+        "reference": "Release-owner supplied rollback reference; not evaluated by this run."
+      },
+      "id": "rollback-eval-15c3b44738c444d88f7222b34fe97328",
+      "kind": "rollback",
+      "url": "https://github.com/MaciejR/agent-readiness-gate-docs/blob/main/rollback-plan.md"
+    }
+  ]
+}
