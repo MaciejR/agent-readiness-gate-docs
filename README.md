@@ -28,6 +28,8 @@ Reading requires access to the Jira issue; imports require Edit Issues; approval
 
 ## Executed evidence and permission acceptance
 
+[Watch the 2:10 measured-evaluation and Rovo supplement](https://www.youtube.com/watch?v=DTPsB5Yrirk). Actual Jira/Rovo capture with synthetic English narration; complements the main regression/remediation video.
+
 Two actual GPT-5 mini runs now have [public raw reports](runs/README.md). The [acceptance record](executed-acceptance.md) documents measured JSON import, same-version approval invalidation, a distinct test account and an actual Rovo response, with explicit limitations. Use the [optional runner](executed-evaluation.md) to reproduce the narrow synthetic evaluation.
 
 ## Prepare your own review
