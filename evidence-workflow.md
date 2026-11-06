@@ -1,6 +1,6 @@
 # From evaluation results to a release review
 
-The intended user is a release owner collecting evaluation, security and rollback evidence for one candidate agent version. The current prototype accepts a manual JSON import. It does not connect to evaluation services, run evaluations or attest their results.
+The intended user is a release owner collecting evaluation, security and rollback evidence for one candidate agent version. The current prototype accepts a manual JSON import. The Forge panel does not call evaluation services or attest results. An optional [local evaluation runner](executed-evaluation.md) executes a scoped synthetic support-triage benchmark against your existing model deployment and exports measured evidence for import.
 
 ## Try it without preparing a file
 
