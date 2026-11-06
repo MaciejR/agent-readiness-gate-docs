@@ -26,6 +26,10 @@ The app needs Jira access, Jira write access for explicitly confirmed remediatio
 
 Reading requires access to the Jira issue; imports require Edit Issues; approval also requires Administer Projects. Remediation requires Create Issues and a supported issue type. An unknown Jira write outcome needs manual reconciliation, not blind retry.
 
+## Executed evidence and permission acceptance
+
+Two actual GPT-5 mini runs now have [public raw reports](runs/README.md). The [acceptance record](executed-acceptance.md) documents measured JSON import, same-version approval invalidation, a distinct test account and an actual Rovo response, with explicit limitations. Use the [optional runner](executed-evaluation.md) to reproduce the narrow synthetic evaluation.
+
 ## Prepare your own review
 
 See [how evaluation results map into evidence](evidence-workflow.md), including a complete synthetic JSON example and the current manual-import limitations.
