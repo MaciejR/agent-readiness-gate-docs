@@ -24,6 +24,10 @@ The app needs Jira access, Jira write access for explicitly confirmed remediatio
 
 Reading requires access to the Jira issue; imports require Edit Issues; approval also requires Administer Projects. Remediation requires Create Issues and a supported issue type. An unknown Jira write outcome needs manual reconciliation, not blind retry.
 
+## Prepare your own review
+
+See [how evaluation results map into evidence](evidence-workflow.md), including a complete synthetic JSON example and the current manual-import limitations.
+
 ## Contact
 
 Maintainer: Maciej Rubczyński. Support and privacy enquiries: **rubczynski.maciej@gmail.com**. Please do not send credentials or sensitive customer evidence.

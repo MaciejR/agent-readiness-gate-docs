@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "agent": {
+    "id": "support-assistant",
+    "name": "Support Assistant",
+    "version": "1.4",
+    "owner": "Synthetic Release Owner"
+  },
+  "environment": "development",
+  "reviewRequested": false,
+  "evidence": [
+    {
+      "id": "evaluation-1-4",
+      "agentVersion": "1.4",
+      "observedAt": "2026-11-05T12:00:00Z",
+      "source": {
+        "type": "synthetic",
+        "reference": "synthetic:evaluation"
+      },
+      "kind": "evaluation",
+      "answerQuality": 0.91,
+      "sampleSize": 150,
+      "runId": "eval-1-4"
+    },
+    {
+      "id": "security-1-4",
+      "agentVersion": "1.4",
+      "observedAt": "2026-11-05T12:00:00Z",
+      "source": {
+        "type": "synthetic",
+        "reference": "synthetic:security"
+      },
+      "kind": "security",
+      "criticalFindings": 0,
+      "runId": "security-1-4"
+    },
+    {
+      "id": "rollback-1-4",
+      "agentVersion": "1.4",
+      "observedAt": "2026-11-05T12:00:00Z",
+      "source": {
+        "type": "synthetic",
+        "reference": "synthetic:rollback"
+      },
+      "kind": "rollback",
+      "url": "https://example.com/synthetic-rollback"
+    }
+  ]
+}
