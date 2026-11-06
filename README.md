@@ -4,7 +4,9 @@ A Forge app for Jira that evaluates supplied agent-release evidence with determi
 
 This prototype is for evaluation with synthetic data. READY means the supplied evidence satisfies the configured policy; it is not a safety guarantee or a Jira workflow restriction. Imported evidence is not independently attested.
 
-[Watch the actual Jira walkthrough](https://www.youtube.com/watch?v=ckmMYSO4124) · [Privacy notice](privacy.md) · [Evaluation terms](terms.md)
+[Watch the 2:12 real Jira interaction demo](https://www.youtube.com/watch?v=5ffNGOeyhG0) · [Privacy notice](privacy.md) · [Evaluation terms](terms.md)
+
+The video uses synthetic evidence and synthetic English narration. It shows a continuous cropped excerpt of the working Jira panel, including explicit approval, regression and duplicate-safe remediation. [Codegeist project](https://devpost.com/software/agent-readiness-gate).
 
 ## Installation
 
