@@ -21,4 +21,4 @@ Lexical separation does not establish semantic-family independence. Public data 
 
 ## Product acceptance status
 
-These are executed evaluation results. Development 2.5.0 adds authenticated runner ingestion, but live ingestion, replay/revocation and same-issue Rovo acceptance remain pending. Existing published videos show the earlier scenarios and do not demonstrate these 270-case results. The public production installation is not claimed to include the new development feature yet.
+The [live acceptance record](live-acceptance.md) documents actual authenticated imports, separate approval, replay, revocation and same-issue Rovo comparison on ARG-1. The corrected Rovo response was observed on development 2.9.0. Existing published videos show the earlier scenarios and do not demonstrate these 270-case results. The public production installation has not yet been updated to this development version.

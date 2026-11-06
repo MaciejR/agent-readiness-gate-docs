@@ -34,7 +34,7 @@ Two actual GPT-5 mini runs now have [public raw reports](runs/README.md). The [a
 
 ## Broader frozen benchmark
 
-The [270-case Bitext demonstration](benchmarks/bitext/README.md) measured 92.96% for the baseline and 73.70% for a disclosed intentional regression. Both executions completed without errors. The results and limitations are public; live acceptance of the new authenticated ingestion flow is still pending.
+The [270-case Bitext demonstration](benchmarks/bitext/README.md) measured 92.96% for the baseline and 73.70% for a disclosed intentional regression. Both executions completed without errors. On the development installation, both reports were imported through the authenticated runner endpoint into ARG-1: separate human approval made the baseline READY, and the regression import cleared that approval and became BLOCKED. Replay, revocation and the same-issue Rovo explanation were observed. See the [live acceptance record](benchmarks/bitext/live-acceptance.md). The public production installation has not yet been updated to this development version.
 
 ## Prepare your own review
 
