@@ -4,9 +4,9 @@ A Forge app for Jira that evaluates supplied agent-release evidence with determi
 
 This prototype is for evaluation with synthetic fixtures and a disclosed hybrid-synthetic public benchmark. READY means the supplied evidence satisfies the configured policy; it is not a safety guarantee or a Jira workflow restriction. Imported evidence is not independently attested.
 
-[Watch the 2:12 real Jira interaction demo](https://www.youtube.com/watch?v=5ffNGOeyhG0) · [Privacy notice](privacy.md) · [Evaluation terms](terms.md)
+[Watch the measured Jira and Rovo demo](https://www.youtube.com/watch?v=w7z_YXPiMbc) · [Privacy notice](privacy.md) · [Evaluation terms](terms.md)
 
-The video uses synthetic evidence and synthetic English narration. It shows a continuous cropped excerpt of the working Jira panel, including explicit approval, regression and duplicate-safe remediation. [Codegeist project](https://devpost.com/software/agent-readiness-gate).
+The approximately 2:09 video shows actual development 2.10.0 Jira/Rovo footage with edited excerpts and synthetic English narration. It reviews the stored 270-case benchmark results, historical approval invalidation and read-only Rovo comparison. It does not depict a new evaluation during filming. The [earlier core workflow video](https://www.youtube.com/watch?v=5ffNGOeyhG0) covers explicit approval, regression and duplicate-safe remediation on production. [Codegeist project](https://devpost.com/software/agent-readiness-gate).
 
 ## Installation
 
