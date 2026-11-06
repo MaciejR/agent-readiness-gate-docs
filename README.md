@@ -8,7 +8,7 @@ This prototype is for evaluation with synthetic data. READY means the supplied e
 
 ## Installation
 
-The verified shareable installation link will be added after distribution setup and independent-site testing. Do not use a guessed installation URL.
+[Install on your Jira test site](install.md). Independent-site installation and the seeded workflow were verified on 6 November 2026.
 
 The app needs Jira access, Jira write access for explicitly confirmed remediation tasks, and Forge app storage. A site administrator installs it. No external model/API key is required for the core panel. The optional Rovo advisor is read-only and depends on Rovo availability.
 
