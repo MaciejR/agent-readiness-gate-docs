@@ -11,3 +11,6 @@ Production 2.0.0 was installed through this link on the independent test site. E
 Optional Rovo requires availability on your Atlassian site. The core Jira panel works without it. The read-only advisor was verified separately on the development site.
 
 Read the [privacy information](privacy.md) and [evaluation terms](terms.md) before installation.
+
+
+Current deployment (7 November 2026): production 2.2.0. Existing-installation release/history reads were verified. Production-specific runner/Rovo acceptance and clean-install testing of this version are not yet complete.

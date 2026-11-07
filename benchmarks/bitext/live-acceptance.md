@@ -25,9 +25,13 @@ Rovo quoted that limitation in the observed response. One correct response does 
 
 A subsequent direct backend approval attempt from the distinct reviewer account on AGA-5 was denied, despite explicit confirmation and the exact revision/policy hash. All six history IDs/actions/timestamps were unchanged. This used the actual Forge bridge on production 2.1.0, not a mocked request or merely a disabled button. Both identities are controlled by one person. Hidden-issue denial remains pending. Concurrency is covered by automated tests, not a live race experiment. Intermittent initial panel loading remains under investigation. A duplicate-form lifecycle defect was reproduced and corrected in development 2.10.0. Two live Reload actions retained one editable runner form; revision-change resets are covered by automated tests. No independent participant study was performed.
 
-The existing videos predate this benchmark. A new coherent main video and production update are pending; the public installer must not be assumed to include development 2.9.0.
+Historical checkpoint before publication: the videos then available predated this benchmark. See the publication and production updates below for the current state.
 
 
 ## Published measured demonstration
 
 On 6 November 2026, the [new main video](https://www.youtube.com/watch?v=w7z_YXPiMbc) was published with user approval and public playback verified. The [Devpost project](https://devpost.com/software/agent-readiness-gate) now uses this URL both in the submission field and its public embedded player. The film shows development 2.10.0, not a newly upgraded production installation. It distinguishes live footage, stored evaluation/history review, and recorded acceptance summaries. Hidden-issue testing and the remaining startup matrix are still incomplete.
+
+
+## Production update — 7 November 2026
+Production 2.2.0 now includes the evaluated feature set and failed-read UI recovery from development 2.11.0. Deployment and Forge lint succeeded; the existing test-site AGA-5 release and six history entries loaded with the new resource. No release data was changed during this check. This is an existing-installation read smoke test, not a clean installation or production ingestion/Rovo acceptance. Those checks and complete individual hidden-issue history-denial evidence remain pending. The film retains its accurate historical development 2.10.0 label.
