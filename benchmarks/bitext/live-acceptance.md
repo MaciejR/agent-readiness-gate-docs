@@ -66,3 +66,18 @@ A repeated production Rovo comparison was bracketed by independent application r
 The request used ARG-1 without an internal numeric ID. Rovo returned the production pair 48611cab-f380-4fc3-a654-6c14283c7131 and 19cce101-744f-4842-8cc4-687b5ba4aa8b, exact quality scores 0.737037037037037 and 0.9296296296296296, and 270 cases each. It stated the immediate-predecessor boundary and CLEARED_BY_IMPORT, then ordered evidence repair before explicit human approval. Both origins were correctly manual-user-supplied, with no authenticated-runner receipt claimed. Development 2.12.0 separately returned its authenticated-runner pair for the same key and refused an unavailable key without substituting the current issue.
 
 283 automated tests, typecheck, lint, build and Forge lint passed. Key lookup uses the requesting user and preserves server authorization. Live responses are bounded observations; one development summary rounded scores, while the production technical details preserved the exact values. No new evaluations or release changes occurred in these read-only checks.
+
+## Final jury walkthrough — 9 November 2026
+
+The existing-site installer displayed “App already installed on this site”; this is not a new-install test. Fresh synthetic AGA-7 passed after the operator manually refreshed an initial host placeholder:
+
+- Blocked sample: 12:30:49.228Z.
+- Repaired sample, approval still missing: 12:31:05.126Z.
+- Explicit approval READY: 12:31:20.792Z.
+- READY persisted after panel Reload: 12:31:28.341Z.
+- Regression v1.5 BLOCKED, approval cleared: 12:31:39.343Z.
+- Four history snapshots retained the earlier READY. Remediation preview displayed an explicit creation step; cancelled without creating an issue. The site default issue type was Epic/Epik, now called out in instructions.
+
+Rovo was checked separately on ARG-1 production 2.3.0, because the test site did not expose Rovo. At 11:47:53.566Z it compared the immediate predecessor, explained READY → BLOCKED and approval clearing, ordered repair before human approval, and correctly identified manual evidence without a runner receipt. No same-site end-to-end Rovo claim is made. The initial host loading cause is unconfirmed and no reliability fix is claimed.
+
+[Current 1:56 film](https://www.youtube.com/watch?v=Zd3PxJguGnw): actual Nov9 production 2.3.0 Rovo plus labelled Nov6 development 2.10.0 Jira footage, enlarged excerpts, held frames and synthetic narration. Stored results, not a new evaluation during filming. Public YouTube publication and the replacement Devpost embed were confirmed.

@@ -12,3 +12,9 @@ Read the [privacy information](privacy.md) and [evaluation terms](terms.md) befo
 
 
 Current deployment: production 2.3.0 (9 November 2026), adding key-based Rovo lookup, ordered review guidance and origin-specific provenance. On 9 November, authenticated baseline/regression import, replay, explicit approval clearing, revocation and separate hidden release/history denials passed on AGA-6. Original permissions and visibility were restored. A fresh production installation on the first site passed empty-state loading, manual measured import, approval, reload, regression and Rovo comparison. Final owner/reviewer direct and board entry checks passed; these observations do not guarantee universal startup reliability. See the [live acceptance record](benchmarks/bitext/live-acceptance.md).
+
+## Fresh-issue walkthrough verified 9 November
+
+AGA-7 passed blocked sample → repaired evidence → explicit approval → READY after panel Reload → regression BLOCKED, retaining historical READY. An initial host loading placeholder cleared after a manual browser refresh; its cause is unconfirmed. If the panel stays on loading, refresh the page once before retrying. This is a recovery step, not a confirmed application fix.
+
+Rovo was verified separately on ARG-1 on the first site; the test site did not expose Rovo. Use your own issue key and the installed Release Readiness Advisor, or follow the core panel/history path without Rovo. For optional remediation, choose the intended issue type: the site default can be Epic/Epik. Preview and cancel are safe review steps; only explicit Create this Jira task creates a task.

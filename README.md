@@ -4,9 +4,9 @@ A Forge app for Jira that evaluates supplied agent-release evidence with determi
 
 This prototype is for evaluation with synthetic fixtures and a disclosed hybrid-synthetic public benchmark. READY means the supplied evidence satisfies the configured policy; it is not a safety guarantee or a Jira workflow restriction. Imported evidence is not independently attested.
 
-[Watch the measured Jira and Rovo demo](https://www.youtube.com/watch?v=UfXcsoULgiA) · [Privacy notice](privacy.md) · [Evaluation terms](terms.md)
+[Watch the measured Jira and Rovo demo](https://www.youtube.com/watch?v=Zd3PxJguGnw) · [Privacy notice](privacy.md) · [Evaluation terms](terms.md)
 
-The 2:21 video shows actual development 2.10.0 Jira/Rovo footage with edited excerpts and synthetic English narration. It reviews the stored 270-case benchmark results, historical approval invalidation and read-only Rovo comparison. It does not depict a new evaluation during filming. The [earlier core workflow video](https://www.youtube.com/watch?v=5ffNGOeyhG0) covers explicit approval, regression and duplicate-safe remediation on production. [Codegeist project](https://devpost.com/software/agent-readiness-gate).
+The 1:56 video combines labelled development 2.10.0 Jira footage from 6 November with actual production 2.3.0 Rovo footage from 9 November, enlarged excerpts, held frames and synthetic English narration. It reviews the stored 270-case benchmark results, historical approval invalidation and read-only Rovo comparison. It does not depict a new evaluation during filming. The [earlier core workflow video](https://www.youtube.com/watch?v=5ffNGOeyhG0) covers explicit approval, regression and duplicate-safe remediation on production. [Codegeist project](https://devpost.com/software/agent-readiness-gate).
 
 ## Installation
 
@@ -22,7 +22,7 @@ The app needs Jira access, Jira write access for explicitly confirmed remediatio
 4. An authorized reviewer checks the explicit approval box and selects **Approve this release**. The exact release becomes READY.
 5. Reload to verify persistence. Historical results remain visible.
 6. Load and save the regression sample. Version 1.5 becomes BLOCKED and cannot inherit the earlier approval.
-7. Optional: preview remediation for a failed control. Review the proposed task and explicitly confirm creation only if you want a Jira task. Creating a task does not change readiness.
+7. Optional: preview remediation for a failed control. Select the intended issue type (for example Task/Zadanie; the site default may be Epic/Epik). Review the proposed task and explicitly confirm creation only if you want a Jira task. Creating a task does not change readiness.
 
 Reading requires access to the Jira issue; imports require Edit Issues; approval also requires Administer Projects. Remediation requires Create Issues and a supported issue type. An unknown Jira write outcome needs manual reconciliation, not blind retry.
 
@@ -38,9 +38,9 @@ Production 2.3.0 returns the immediate-predecessor comparison and a suggested or
 
 Actual GPT-5 mini evaluations on a frozen [270-case Bitext benchmark](benchmarks/bitext/README.md) scored 251/270 and 199/270 for a disclosed intentional regression. This is a bounded intent-classification example, not broad agent safety validation. [Original reports and live acceptance](benchmarks/bitext/live-acceptance.md) document imports, approval invalidation, replay, revocation, separate-account denials and production Rovo responses.
 
-The two accounts belong to one operator. There was no independent participant study. Report authentication does not attest execution or metric truth. Earlier owner/reviewer entry checks loaded. A later fresh-issue walkthrough on 9 November encountered a persistent host loading placeholder and remains under investigation; no universal startup reliability is claimed.
+The two accounts belong to one operator. There was no independent participant study. Report authentication does not attest execution or metric truth. Earlier owner/reviewer entry checks loaded. The fresh AGA-7 walkthrough on 9 November passed after a manual page refresh cleared the initial host loading placeholder. The cause is unconfirmed; manual recovery is not a reliability fix.
 
-The currently published 2:21 film opens with a release-owner scenario and separately summarizes completed production acceptance on 9 November. Screen recordings remain historical development 2.10 footage; the film does not depict the later key-based Rovo update. The [earlier core workflow video](https://www.youtube.com/watch?v=5ffNGOeyhG0) demonstrates explicit approval and remediation; [earlier measured-run evidence](executed-acceptance.md) and the [optional runner](executed-evaluation.md) remain available separately.
+The current film shows key-based production Rovo comparison and its ordered review plan. The filmed Rovo snapshots were manually imported, without an authenticated-runner receipt; authenticated imports are documented separately. The [earlier core workflow video](https://www.youtube.com/watch?v=5ffNGOeyhG0) demonstrates explicit approval and remediation; [earlier measured-run evidence](executed-acceptance.md) and the [optional runner](executed-evaluation.md) remain available separately.
 
 ## Prepare your own review
 
