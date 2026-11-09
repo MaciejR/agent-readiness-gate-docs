@@ -48,4 +48,14 @@ The same original measured reports were imported to synthetic AGA-6 through two 
 - On failed Reload, the panel cleared previously displayed release, provenance and history, removed release actions and disabled import controls.
 - Original visibility and permission associations were restored; the temporary owner permission was absent. Reviewer reads and the panel recovered, with history unchanged. Both accounts are controlled by one operator.
 
-Production Rovo comparison, the complete startup matrix and clean-install testing of 2.2.0 remain open. These results do not establish independent user research, general security certification or universal loading reliability. The main film remains accurately labelled as historical development 2.10.0 footage.
+At this checkpoint, production Rovo comparison, the complete startup matrix and fresh-install UI testing remained open; the follow-up below records their results. These results do not establish independent user research, general security certification or universal loading reliability. The main film remains accurately labelled as historical development 2.10.0 footage.
+
+### Fresh installation, Rovo and entry paths — 9 November follow-up
+
+A new production installation on the first Jira site started empty, alongside the existing development installation. Manual import of the original baseline evidence produced BLOCKED; explicit approval produced READY and survived Reload. Manual regression import produced BLOCKED and cleared approval, with three new history entries. Development history remained separate. This is a manual-evidence acceptance flow; authenticated transport was verified separately on AGA-6 above.
+
+The actual production Rovo response identified current snapshot `48611cab-f380-4fc3-a654-6c14283c7131` at 10:47:15.482 UTC and previous snapshot `19cce101-744f-4842-8cc4-687b5ba4aa8b` at 10:46:37.680 UTC. It reported 92.96% to 73.70%, 270 cases each, changed `answer-quality` and `security-approval` controls, and `CLEARED_BY_IMPORT`. On follow-up it identified both origins as `manual-user-supplied`. The initial question using only ARG-1 failed until the numeric issue ID was supplied; this remains a usability limitation. The response used generic runner-provenance caveats even for manual input, so the actual method was explicitly clarified.
+
+The final native-Chrome entry matrix passed all four observed paths on production AGA-6: owner/direct, owner/board modal, reviewer/direct in a new incognito tab, and reviewer/board modal. The reviewed application fixes address duplicate lifecycle forms and stale display after a failed authorization read. Earlier host-level skeletons/delayed frame loading were observed separately and are not claimed to have a confirmed upstream root cause or a universal fix.
+
+A repeated production Rovo comparison was bracketed by independent application reads. Both snapshot IDs matched the stored pair, and the current snapshot plus complete three-entry history were identical before and after the response. This verifies the observed comparison was read-only; it is not a general guarantee of all future model responses.
