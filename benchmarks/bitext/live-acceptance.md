@@ -59,3 +59,10 @@ The actual production Rovo response identified current snapshot `48611cab-f380-4
 The final native-Chrome entry matrix passed all four observed paths on production AGA-6: owner/direct, owner/board modal, reviewer/direct in a new incognito tab, and reviewer/board modal. The reviewed application fixes address duplicate lifecycle forms and stale display after a failed authorization read. Earlier host-level skeletons/delayed frame loading were observed separately and are not claimed to have a confirmed upstream root cause or a universal fix.
 
 A repeated production Rovo comparison was bracketed by independent application reads. Both snapshot IDs matched the stored pair, and the current snapshot plus complete three-entry history were identical before and after the response. This verifies the observed comparison was read-only; it is not a general guarantee of all future model responses.
+
+
+### Key-based review brief — 9 November, production 2.3.0
+
+The request used ARG-1 without an internal numeric ID. Rovo returned the production pair 48611cab-f380-4fc3-a654-6c14283c7131 and 19cce101-744f-4842-8cc4-687b5ba4aa8b, exact quality scores 0.737037037037037 and 0.9296296296296296, and 270 cases each. It stated the immediate-predecessor boundary and CLEARED_BY_IMPORT, then ordered evidence repair before explicit human approval. Both origins were correctly manual-user-supplied, with no authenticated-runner receipt claimed. Development 2.12.0 separately returned its authenticated-runner pair for the same key and refused an unavailable key without substituting the current issue.
+
+283 automated tests, typecheck, lint, build and Forge lint passed. Key lookup uses the requesting user and preserves server authorization. Live responses are bounded observations; one development summary rounded scores, while the production technical details preserved the exact values. No new evaluations or release changes occurred in these read-only checks.

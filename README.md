@@ -26,15 +26,19 @@ The app needs Jira access, Jira write access for explicitly confirmed remediatio
 
 Reading requires access to the Jira issue; imports require Edit Issues; approval also requires Administer Projects. Remediation requires Create Issues and a supported issue type. An unknown Jira write outcome needs manual reconciliation, not blind retry.
 
-## Executed evidence and permission acceptance
+## Ask Rovo for a review brief
 
-[Watch the 2:10 measured-evaluation and Rovo supplement](https://www.youtube.com/watch?v=DTPsB5Yrirk). Actual Jira/Rovo capture with synthetic English narration; complements the main regression/remediation video.
+Use the Jira issue key, for example: **“Give me a release-review brief for ARG-1: what changed, why is approval invalid, and what should I review next?”**
 
-Two actual GPT-5 mini runs now have [public raw reports](runs/README.md). The [acceptance record](executed-acceptance.md) documents measured JSON import, same-version approval invalidation, a distinct test account and an actual Rovo response, with explicit limitations. Use the [optional runner](executed-evaluation.md) to reproduce the narrow synthetic evaluation.
+Production 2.3.0 returns the immediate-predecessor comparison and a suggested order: repair failed evidence, resolve any requested review, then seek explicit human approval. It distinguishes manual input from authenticated submission. Rovo cannot perform these steps or approve the release.
 
-## Broader frozen benchmark
+## Evidence and limits
 
-The [270-case Bitext demonstration](benchmarks/bitext/README.md) measured 92.96% for the baseline and 73.70% for a disclosed intentional regression. Both executions completed without errors. On the development installation, both reports were imported through the authenticated runner endpoint into ARG-1: separate human approval made the baseline READY, and the regression import cleared that approval and became BLOCKED. Replay, revocation and the same-issue Rovo explanation were observed. See the [live acceptance record](benchmarks/bitext/live-acceptance.md). Production 2.2.0 was deployed on 7 November 2026 with these features and failed-read UI recovery. On 9 November, production AGA-6 passed authenticated imports, replay, separate approval, regression approval-clearing and revocation. Individual hidden release/history denials passed on the second account; original settings were restored. A fresh production installation and its manual-evidence Rovo comparison also passed. Final owner/reviewer direct and board entries loaded successfully. Rovo required the numeric issue ID; earlier intermittent host loading remains an explicit limitation.
+Actual GPT-5 mini evaluations on a frozen [270-case Bitext benchmark](benchmarks/bitext/README.md) scored 251/270 and 199/270 for a disclosed intentional regression. This is a bounded intent-classification example, not broad agent safety validation. [Original reports and live acceptance](benchmarks/bitext/live-acceptance.md) document imports, approval invalidation, replay, revocation, separate-account denials and production Rovo responses.
+
+The two accounts belong to one operator. There was no independent participant study. Report authentication does not attest execution or metric truth. The final tested entry paths loaded, but earlier intermittent host loading has no established upstream root cause.
+
+The main film remains historical development footage; its pending-hidden-test caption was superseded by the completed 9 November acceptance. A corrected film is prepared, with publication pending. The [earlier core workflow video](https://www.youtube.com/watch?v=5ffNGOeyhG0) demonstrates explicit approval and remediation; [earlier measured-run evidence](executed-acceptance.md) and the [optional runner](executed-evaluation.md) remain available separately.
 
 ## Prepare your own review
 
