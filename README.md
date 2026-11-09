@@ -4,9 +4,9 @@ A Forge app for Jira that evaluates supplied agent-release evidence with determi
 
 This prototype is for evaluation with synthetic fixtures and a disclosed hybrid-synthetic public benchmark. READY means the supplied evidence satisfies the configured policy; it is not a safety guarantee or a Jira workflow restriction. Imported evidence is not independently attested.
 
-[Watch the measured Jira and Rovo demo](https://www.youtube.com/watch?v=w7z_YXPiMbc) · [Privacy notice](privacy.md) · [Evaluation terms](terms.md)
+[Watch the measured Jira and Rovo demo](https://www.youtube.com/watch?v=UfXcsoULgiA) · [Privacy notice](privacy.md) · [Evaluation terms](terms.md)
 
-The approximately 2:09 video shows actual development 2.10.0 Jira/Rovo footage with edited excerpts and synthetic English narration. It reviews the stored 270-case benchmark results, historical approval invalidation and read-only Rovo comparison. It does not depict a new evaluation during filming. The [earlier core workflow video](https://www.youtube.com/watch?v=5ffNGOeyhG0) covers explicit approval, regression and duplicate-safe remediation on production. [Codegeist project](https://devpost.com/software/agent-readiness-gate).
+The 2:21 video shows actual development 2.10.0 Jira/Rovo footage with edited excerpts and synthetic English narration. It reviews the stored 270-case benchmark results, historical approval invalidation and read-only Rovo comparison. It does not depict a new evaluation during filming. The [earlier core workflow video](https://www.youtube.com/watch?v=5ffNGOeyhG0) covers explicit approval, regression and duplicate-safe remediation on production. [Codegeist project](https://devpost.com/software/agent-readiness-gate).
 
 ## Installation
 
@@ -38,7 +38,7 @@ Actual GPT-5 mini evaluations on a frozen [270-case Bitext benchmark](benchmarks
 
 The two accounts belong to one operator. There was no independent participant study. Report authentication does not attest execution or metric truth. The final tested entry paths loaded, but earlier intermittent host loading has no established upstream root cause.
 
-The main film remains historical development footage; its pending-hidden-test caption was superseded by the completed 9 November acceptance. A corrected film is prepared, with publication pending. The [earlier core workflow video](https://www.youtube.com/watch?v=5ffNGOeyhG0) demonstrates explicit approval and remediation; [earlier measured-run evidence](executed-acceptance.md) and the [optional runner](executed-evaluation.md) remain available separately.
+The updated main film opens with a release-owner scenario and separately summarizes completed production acceptance on 9 November. Screen recordings remain historical development 2.10 footage; the film does not depict the later key-based Rovo update. The [earlier core workflow video](https://www.youtube.com/watch?v=5ffNGOeyhG0) demonstrates explicit approval and remediation; [earlier measured-run evidence](executed-acceptance.md) and the [optional runner](executed-evaluation.md) remain available separately.
 
 ## Prepare your own review
 
