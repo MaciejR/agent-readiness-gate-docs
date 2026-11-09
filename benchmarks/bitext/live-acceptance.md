@@ -23,15 +23,29 @@ Rovo quoted that limitation in the observed response. One correct response does 
 
 ## Remaining acceptance work
 
-A subsequent direct backend approval attempt from the distinct reviewer account on AGA-5 was denied, despite explicit confirmation and the exact revision/policy hash. All six history IDs/actions/timestamps were unchanged. This used the actual Forge bridge on production 2.1.0, not a mocked request or merely a disabled button. Both identities are controlled by one person. Hidden-issue denial remains pending. Concurrency is covered by automated tests, not a live race experiment. Intermittent initial panel loading remains under investigation. A duplicate-form lifecycle defect was reproduced and corrected in development 2.10.0. Two live Reload actions retained one editable runner form; revision-change resets are covered by automated tests. No independent participant study was performed.
+A subsequent direct backend approval attempt from the distinct reviewer account on AGA-5 was denied, despite explicit confirmation and the exact revision/policy hash. All six history IDs/actions/timestamps were unchanged. This used the actual Forge bridge on production 2.1.0, not a mocked request or merely a disabled button. Both identities are controlled by one person. Hidden-issue denial was pending at this checkpoint; the 9 November update below closes it. Concurrency is covered by automated tests, not a live race experiment. Intermittent initial panel loading remains under investigation. A duplicate-form lifecycle defect was reproduced and corrected in development 2.10.0. Two live Reload actions retained one editable runner form; revision-change resets are covered by automated tests. No independent participant study was performed.
 
 Historical checkpoint before publication: the videos then available predated this benchmark. See the publication and production updates below for the current state.
 
 
 ## Published measured demonstration
 
-On 6 November 2026, the [new main video](https://www.youtube.com/watch?v=w7z_YXPiMbc) was published with user approval and public playback verified. The [Devpost project](https://devpost.com/software/agent-readiness-gate) now uses this URL both in the submission field and its public embedded player. The film shows development 2.10.0, not a newly upgraded production installation. It distinguishes live footage, stored evaluation/history review, and recorded acceptance summaries. Hidden-issue testing and the remaining startup matrix are still incomplete.
+On 6 November 2026, the [new main video](https://www.youtube.com/watch?v=w7z_YXPiMbc) was published with user approval and public playback verified. The [Devpost project](https://devpost.com/software/agent-readiness-gate) now uses this URL both in the submission field and its public embedded player. The film shows development 2.10.0, not a newly upgraded production installation. It distinguishes live footage, stored evaluation/history review, and recorded acceptance summaries. At publication, hidden-issue testing and the remaining startup matrix were incomplete; see the updates below.
 
 
 ## Production update — 7 November 2026
 Production 2.2.0 now includes the evaluated feature set and failed-read UI recovery from development 2.11.0. Deployment and Forge lint succeeded; the existing test-site AGA-5 release and six history entries loaded with the new resource. No release data was changed during this check. This is an existing-installation read smoke test, not a clean installation or production ingestion/Rovo acceptance. Those checks and complete individual hidden-issue history-denial evidence remain pending. The film retains its accurate historical development 2.10.0 label.
+
+## Production acceptance — 9 November 2026
+
+The same original measured reports were imported to synthetic AGA-6 through two explicitly authorized, report-bound runner grants. This was a new transport/UI acceptance test, not another model run.
+
+- Baseline: 251/270, initially BLOCKED until a separate explicit owner approval produced READY snapshot `9b44b551-37a2-4746-b1c2-01962ebb0efe`.
+- Replay of the baseline was acknowledged with no additional history entry.
+- Regression: 199/270, BLOCKED snapshot `a1f87606-f1d1-4eef-aec5-eae88a8c9b2e`, approval cleared and linked to the prior READY snapshot. Three history entries remained.
+- Runner access was revoked. A subsequent exact-report request returned HTTP 403 and history stayed unchanged.
+- With AGA-6 temporarily owner-only, the independently authenticated reviewer received separate application denials from both actual `getRelease` and `getHistory` resolvers. They returned no release/history data. Jira also returned 404, but that alone was not treated as proof of resolver authorization.
+- On failed Reload, the panel cleared previously displayed release, provenance and history, removed release actions and disabled import controls.
+- Original visibility and permission associations were restored; the temporary owner permission was absent. Reviewer reads and the panel recovered, with history unchanged. Both accounts are controlled by one operator.
+
+Production Rovo comparison, the complete startup matrix and clean-install testing of 2.2.0 remain open. These results do not establish independent user research, general security certification or universal loading reliability. The main film remains accurately labelled as historical development 2.10.0 footage.

@@ -6,11 +6,11 @@ This is the actual Forge distribution link tested on a separate Jira site on 6 N
 
 Create a Jira software project and a synthetic issue. In the issue's Apps menu, open **Agent Readiness Gate**. Follow the [walkthrough](README.md). The reviewer needs **Edit Issues** and **Administer Projects** permissions in that project; site administration alone may not grant the project permission. On a new company-managed project, confirm the reviewer has the project Administrators role before the approval step.
 
-Production 2.0.0 was installed through this link on the independent test site. Empty state, blocked import, reload, repaired evidence, explicit approval to READY, regression to BLOCKED, four history snapshots, and duplicate-safe remediation all passed. The same owner account was used across two distinct sites; alternate-account and hidden-issue tests were not performed live.
+Production 2.0.0 was installed through this link on the independent test site. Empty state, blocked import, reload, repaired evidence, explicit approval to READY, regression to BLOCKED, four history snapshots, and duplicate-safe remediation all passed. The same owner account was used across two distinct sites; alternate-account and hidden-issue tests had not yet been performed at that checkpoint. See the current acceptance update below.
 
 Optional Rovo requires availability on your Atlassian site. The core Jira panel works without it. The read-only advisor was verified separately on the development site.
 
 Read the [privacy information](privacy.md) and [evaluation terms](terms.md) before installation.
 
 
-Current deployment (7 November 2026): production 2.2.0. Existing-installation release/history reads were verified. Production-specific runner/Rovo acceptance and clean-install testing of this version are not yet complete.
+Current deployment: production 2.2.0 (7 November 2026). On 9 November, authenticated baseline/regression import, replay, explicit approval clearing, revocation and separate hidden release/history denials passed on AGA-6. Original permissions and visibility were restored. Production Rovo and clean-install testing of this version are still pending. See the [live acceptance record](benchmarks/bitext/live-acceptance.md).
